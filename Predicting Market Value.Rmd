@@ -1,0 +1,98 @@
+---
+title: " Predicting Market Value"
+output: html_document
+date: "2022-12-01"
+---
+## Loading Libraries
+```{r}
+library(tidyverse)
+library(ggplot2)
+```
+```{r}
+## Laoding dataset
+epl <- read.csv("/Users/fuadhassan/Downloads/epldata_final 2.csv")
+## Data has unique club_id's that will represent row numbers
+epl <- epl %>% mutate(club_id = row_number()) %>% relocate(club_id, .before = name ) ## Moving club_id to first columns
+
+##Sums of NA's
+#sapply(epl, function(x) sum(is.na(x)))
+
+### Imputing region value for Steve Mounie, Beninese player so falls in category 4 (Rest of the world)
+#new_DF <- epl[is.na(epl$region),] - subsetting obs with NA
+epl$region_ind <- as.factor(ifelse(is.na(epl$region), 1, 0)) ## Imputation flag
+epl$region[is.na(epl$region)] <- 4 ### Imputing
+
+```
+
+```{r}
+## EPL summary
+#summary(epl)
+### Turning variables to factors
+epl <- epl %>%
+  mutate_if(~(is.integer(.) & n_distinct(.) > 10), as.numeric)%>%
+  mutate_if(~(is.integer(.) & n_distinct(.) < 10), as.factor) %>%mutate_if(~(is.character(.) & n_distinct(.)  < 14), as.factor)
+#str(epl1)
+```
+
+```{r}
+## Changing position format
+epl<-epl %>% 
+mutate(position = ifelse(position == "GK", "Goalkeeper",
+                   ifelse(position == "CB", "CenterBack",
+                         ifelse(position == "CM", "CenterMidfield",
+                               ifelse(position == "CF", "CenterForward",
+                                   ifelse(position == "DM", "DefenseMidfield",
+                                         ifelse(position == "LW", "LeftWing",
+                                               ifelse(position == "LB", "LeftBack",
+                                                   ifelse(position == "RB", "RightBack",
+                                                         ifelse(position == "RW", "RightWing",
+                                                               ifelse(position == "AM", "AttackMidfield",
+                                                                   ifelse(position == "LM", "LeftMidfield",
+                                                                         ifelse(position == "SS", "SupportStriker","RightMidfield")))))))))))))
+epl$position <- as.factor(epl$position)
+```
+
+```{r}
+epl <-  epl %>%
+  dplyr::select(-c(fpl_sel))
+```
+
+```{r}
+# Splitting train and test
+set.seed(456)
+train <- epl %>% sample_frac(0.6)
+
+test <- anti_join(epl, train, by = 'club_id')
+
+#dim(train)
+```
+##Univariate Exploration
+```{r}
+### Interested in 4 variables to predict market value: Age, Page Views, fpl value, big club
+plot(density(train$market_value))
+plot(density(train$age))
+plot(density(train$page_views))
+plot(density(train$fpl_value))
+```
+### Bivariate Analysis
+```{r}
+#Age
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = age, y = market_value))
+# Page Views
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = page_views, y = market_value))
+
+#FPL Value
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = fpl_value, y = market_value))
+## Big Club
+ggplot(train) + 
+  geom_bar(aes(x=big_club,y= market_value), 
+           position = "dodge", stat = "summary", fun = "mean")
+
+```
+
+
+
+
