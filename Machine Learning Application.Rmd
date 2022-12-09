@@ -58,6 +58,7 @@ table(insurance_train$INS, insurance_train$MMCRED)
 ```
 ## Collapsing MMCRED
 ```{r}
+# Collapsed variable MMCRED due to Quasi Completion problem
 insurance_train$MMCRED <- fct_collapse(insurance_train$MMCRED, "3+" = c("3","5"))
 ```
 ##Imputing numerical with median
