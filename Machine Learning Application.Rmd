@@ -207,16 +207,6 @@ plot(perf.XGB, lwd = 3, colorize = TRUE, colorkey = TRUE,
 ```
 
 
-```{r}
-abline(h = 2.2, lty = 3)
-abline(v = 0.20, lty = 3)
-```
-```{r}
-table(ins$INS)
-5577/8495
-```
-
-
 
 
 
