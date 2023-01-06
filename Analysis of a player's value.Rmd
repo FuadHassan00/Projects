@@ -1,0 +1,269 @@
+---
+title: " Analysis of value"
+output: html_document
+date: "2022-12-01"
+---
+## Loading Libraries
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(tidyverse)
+library(car)
+library(DescTools)
+library(corrplot)
+library(mosaic)
+#library(modelr)
+library(plotly)
+library(ggplot2)
+library(Hmisc)
+library(onehot)
+library(jmuOutlier)
+library(leaps)
+#library(glmnet)
+library(nortest)
+library(lmtest)
+library(InformationValue)
+library(gmodels)
+library(vcdExtra)
+library(TSA)
+library(carData)
+library(epiDisplay)
+library(gridExtra)
+library(caret)
+library(leaps)
+library(glmnet)
+library(ggplot2)
+library(earth)
+library(mgcv)
+library(xgboost)
+```
+
+```{r}
+## Laoding dataset
+epl <- read.csv("/Users/fuadhassan/Downloads/epldata_final 2.csv")
+## Data has unique club_id's that will represent row numbers
+epl <- epl %>% mutate(club_id = row_number()) %>% relocate(club_id, .before = name ) ## Moving club_id to first columns
+
+##Sums of NA's
+#sapply(epl, function(x) sum(is.na(x)))
+
+### Imputing region value for Steve Mounie, Beninese player so falls in category 4 (Rest of the world)
+#new_DF <- epl[is.na(epl$region),] - subsetting obs with NA
+epl$region_ind <- as.factor(ifelse(is.na(epl$region), 1, 0)) ## Imputation flag
+epl$region[is.na(epl$region)] <- 4 ### Imputing
+
+```
+
+```{r}
+## EPL summary
+#summary(epl)
+### Turning variables to factors
+epl <- epl %>%
+  mutate_if(~(is.integer(.) & n_distinct(.) > 10), as.numeric)%>%
+  mutate_if(~(is.integer(.) & n_distinct(.) < 10), as.factor) %>%mutate_if(~(is.character(.) & n_distinct(.)  < 14), as.factor)
+#str(epl1)
+```
+
+```{r}
+##Creating a binary variable off of the median market value
+Median(epl$market_value) ## The median is 7 million dollars
+epl$value = ifelse(epl$market_value > 7, 1, 0)
+
+```
+
+```{r}
+## Changing position format
+epl<-epl %>% 
+mutate(position = ifelse(position == "GK", "Goalkeeper",
+                   ifelse(position == "CB", "CenterBack",
+                         ifelse(position == "CM", "CenterMidfield",
+                               ifelse(position == "CF", "CenterForward",
+                                   ifelse(position == "DM", "DefenseMidfield",
+                                         ifelse(position == "LW", "LeftWing",
+                                               ifelse(position == "LB", "LeftBack",
+                                                   ifelse(position == "RB", "RightBack",
+                                                         ifelse(position == "RW", "RightWing",
+                                                               ifelse(position == "AM", "AttackMidfield",
+                                                                   ifelse(position == "LM", "LeftMidfield",
+                                                                         ifelse(position == "SS", "SupportStriker","RightMidfield")))))))))))))
+epl$position <- as.factor(epl$position)
+```
+
+```{r}
+# Splitting train and test
+set.seed(456)
+train <- epl %>% sample_frac(0.80)
+
+test <- anti_join(epl, train, by = 'club_id')
+
+#dim(train)
+```
+##Univariate Exploration
+```{r}
+### Interested in 4 variables to predict market value: Age, Page Views, Fantasy Premier League value, big club in premier league
+plot(density(train$market_value)) #Right Skewed
+plot(density(train$age)) ## Normally distributed
+plot(density(train$page_views)) ### Right skewed
+plot(density(train$fpl_value)) ## Right Skewed
+```
+### Bivariate Analysis
+```{r}
+#Age
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = age, y = market_value))
+# Page Views
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = page_views, y = market_value))
+
+#FPL Value
+ggplot(data = train) + 
+  geom_point(mapping = aes(x = fpl_value, y = market_value))
+## Big Club
+ggplot(train) + 
+  geom_bar(aes(x=big_club,y= market_value), 
+           position = "dodge", stat = "summary", fun = "mean")
+
+# ggplot(data= train,aes(y = market_value,
+# 				x = big_club,
+# 				fill = big_club)) + geom_boxplot()
+# + labs(y = "Sales Price (Thousands $)", x = "Central Air")
+# + scale_fill_brewer(palette="Accent")
+# +theme_classic() + coord_flip()
+```
+
+```{r}
+## Building  MLR model and checking VIF
+lm.epl=lm(market_value ~ age + s(page_views) + big_club + s(fpl_value),data=train)
+vif(lm.epl) ## Using a VIF of 5 to observe multicolinearity
+```
+```{r}
+## Checking residuals on individual variables
+#Age
+ggplot(lm.epl,aes(x=age,y=resid(lm.epl)))+geom_point(color="blue",size=3) 
+
+# Page Views
+ggplot(lm.epl,aes(x=page_views,y=resid(lm.epl)))+geom_point(color="blue",size=3)
+
+## Fantasy Premier League Value
+ggplot(lm.epl,aes(x=fpl_value,y=resid(lm.epl)))+geom_point(color="blue",size=3)
+
+## Residuals are too Wonky, Two different machine learning methods of GAM and XGBoost will be attempted
+```
+## Residuals were too wonky, Two different machine learning methods of GAM and XGBoost will be attempted to clasiffy if a player will be above 7 million dollars or not
+#Apply Machine Learning Methods
+```{r}
+## Subsetting Data
+epl.train <- train %>%
+  dplyr::select(c(age,page_views,big_club,fpl_value, value))
+```
+
+```{r}
+## Building Crosstab to check for separation issues
+tnames <- names(epl.train)
+
+for (u in tnames){
+  separation<-table(epl.train$value, epl.train[,u]) 
+  print(u)
+  print(separation)
+}
+```
+
+##Building GAM Model
+```{r}
+## Building GAM Model
+epl.gam <- mgcv::gam(value ~ s(age) + s(page_views) + factor(big_club) + s(fpl_value) , method = 'REML', data = epl.train, family = 'binomial')
+summary(epl.gam)
+```
+
+```{r}
+#Plotting ROC Curve
+epl.train$p_hat <- predict(epl.gam, type = "response")
+gam.roc <- roc(epl.train$value, epl.train$p_hat)
+plot(gam.roc, lwd = 3, col = "dodgerblue3", main = paste0("ROC of GAM Model(AUC = ", round(auc(gam.roc), 4),")"), 
+      xlab = "True Positive Rate",
+      ylab = "False Positive Rate")
+## ROC Values .9369
+#auc(gam.roc)
+```
+## Building XGBoost Model
+```{r}
+## Subsetting data and preparing data for tunning
+epl.train1 <- epl.train %>%
+  dplyr::select(-c(p_hat))
+train_x <- model.matrix(value~ ., data = epl.train1)[, -1]
+train_y <- epl.train1$value
+```
+
+```{r}
+set.seed(345)
+# Tuning an XGBoost nrounds parameter - 21 was lowest!
+xgbcv.epl <- xgb.cv(data = train_x, label = train_y, subsample = 0.5, nrounds = 100, nfold = 10, objective = "binary:logistic",  eval.metric = "auc")
+
+## Tuning through caret
+train_y1 <- as.factor(train_y)
+tune_grid <- expand.grid(
+  nrounds = 21,
+  eta = c(0.1, 0.15, 0.2, 0.25, 0.3),
+  max_depth = c(1:10),
+  gamma = c(0),
+  colsample_bytree = 1,
+  min_child_weight = 1,
+  subsample = c(0.25, 0.5, 0.75, 1)
+)
+
+set.seed(376)
+xgb.epl.caret <- train(x = train_x, y = train_y1,
+                        method = "xgbTree",
+                        tuneGrid = tune_grid,
+                        trControl = trainControl(method = 'cv', # Using 10-fold cross-validation
+                                                 number = 10))
+```
+
+```{r}
+##Extracting optimal values for model
+xgb.epl.caret$bestTune
+```
+
+```{r}
+##New Model
+set.seed(376)
+xgb.epl <- xgboost(data = train_x, label = train_y, subsample = .75, nrounds = 21,max_depth = 4, eta = .15, objective = "binary:logistic")
+```
+```{r}
+##XGB ROC CURVE
+epl.train1$p_hat <- predict(xgb.epl, train_x)
+pred2 <- ROCR::prediction(epl.train1$p_hat, epl.train1$value)
+xgb.perf <- performance(pred2, measure = "tpr", x.measure = "fpr")
+xgb.roc <- roc(epl.train1$value, epl.train1$p_hat)
+plot(xgb.perf, lwd = 3, col = "dodgerblue3", main = paste0("ROC of XGBoost Model Training Data(AUC = ",sprintf("%.4f",round(auc(xgb.roc), 4)),")"), 
+     xlab = "True Positive Rate",
+     ylab = "False Positive Rate")
+abline(a = 0, b = 1, lty = 3)
+## ROC Values .9690
+#auc(xgb.roc)
+```
+
+##  XGBoost performed the best on the training data so it will be used on the test data
+```{r}
+epl.test <- test %>%
+  dplyr::select(c(value,age,page_views,big_club,fpl_value))
+epl.test$value = as.numeric(epl.test$value) - 1
+train_tx <- model.matrix(value ~ ., data = epl.test)[, -1]
+train_ty <- epl.test$value
+```
+
+```{r}
+epl.test$p_hat <- predict(xgb.epl, train_tx)
+pred1 <- ROCR::prediction(epl.train1$p_hat, epl.train1$value)
+xgb.perf1 <- performance(pred1, measure = "tpr", x.measure = "fpr")
+xgb.t.roc <- roc(epl.test$value, epl.test$p_hat)
+plot(xgb.perf1, lwd = 3, col = "dodgerblue3", main = paste0("ROC of XGBoost Model Test Data (AUC = ",sprintf("%.4f",round(auc(xgb.t.roc), 4)),")"), 
+     xlab = "True Positive Rate",
+     ylab = "False Positive Rate")
+abline(a = 0, b = 1, lty = 3)
+##AUC .9043
+```
+
+
+
+
