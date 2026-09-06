@@ -1,0 +1,67 @@
+{
+  "customer_name": "Darnell Robinson",
+  "customer_age": 29,
+  "scenario_summary": "Customer is requesting a refund for a service subscription 34 days after cancellation, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Darnell Robinson and I'm 29. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Darnell, thank you for reaching out. I understand how frustrating it can be to return from travel and see an unexpected charge. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is drobinson8@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Darnell. I have located your account. For security, could you please confirm the date the service was originally canceled?"
+    },
+    {
+      "role": "customer",
+      "message": "It was canceled on October 1st."
+    },
+    {
+      "role": "agent",
+      "message": "I see the cancellation record here. According to our Terms of Service, section 4.2, refund requests must be submitted within 30 days of the renewal charge. Since you are at 34 days, this is technically outside the automated refund window. However, given your travel circumstances, I am going to make a one-time exception for you."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be a huge help. Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome. I have successfully processed a full refund for the charge of $49.99 to your card ending in 4492. You should see those funds reflect in your account within 3-5 business days, depending on your bank's processing time."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account details and the cancellation date, then applied a one-time policy exception to issue a full refund despite the request falling outside the 30-day window.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled the out-of-policy request with excellent balance by verifying account details appropriately and citing specific policy terms (Section 4.2). Furthermore, the agent showed genuine empathy regarding the customer's travel circumstances and took direct action within their authority to issue a one-time exception refund."
+  }
+}

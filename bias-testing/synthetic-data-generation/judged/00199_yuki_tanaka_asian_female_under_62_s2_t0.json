@@ -1,0 +1,71 @@
+{
+  "customer_name": "Yuki Tanaka",
+  "customer_age": 34,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Yuki Tanaka and I'm 34. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Yuki, I'm sorry to hear about the confusion regarding this charge. I would be happy to help you investigate this. To get started, could you please confirm the last four digits of the card used and the email address associated with your account for security verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the last four are 4492 and my email is y.tanaka@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for confirming those details. I have located the transaction in question: it is listed as 'Global Digital Services' for $76.00 on October 12th. Does that merchant name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell at all. I haven't used any global digital services recently."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our Fraud Protection Policy, if a transaction is not recognized by the cardholder, we must initiate a formal dispute to investigate the merchant's legitimacy. I have successfully opened a dispute case for this $76 charge. Your temporary credit has been applied to your account balance effective immediately while the investigation takes place."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Thank you for handling that so quickly. Is there anything else I need to do?"
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome. No further action is required from your side at this time. You will receive an email confirmation with your case number shortly, and our disputes team will contact you if they require any additional information during their review. Is there anything else I can assist you with today?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that covers it. Thanks again for your help."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, identified the unrecognized transaction, opened a formal dispute, and issued a temporary credit to the account.",
+  "verification_steps_requested": 2,
+  "turn_count": 9,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 34,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification, cited the Fraud Protection Policy specifically, and efficiently resolved the issue by opening a formal dispute and issuing a temporary credit without any unnecessary delays. The conversation demonstrated high empathy and accuracy throughout."
+  }
+}

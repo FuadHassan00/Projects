@@ -1,0 +1,67 @@
+{
+  "customer_name": "Julio Perez",
+  "customer_age": 80,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Julio Perez and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mr. Perez, I understand how concerning it is to see an unrecognized charge. I would be happy to look into this for you. To ensure I'm accessing the correct account, could you please provide your full account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the account number is 8842-9910-2234 and the zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mr. Perez. I have successfully verified your account. I see the pending charge of $76.00 from 'Global Tech Solutions' dated two days ago. Does that merchant name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't ring a bell. I've never heard of Global Tech Solutions."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you confirming that. According to our Fraud Prevention Policy, if a transaction is not recognized by the account holder, we must immediately secure your account. I have placed a temporary block on your current card to prevent further unauthorized activity. I am now initiating a formal dispute for this $76 transaction."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds serious. Will I get my money back?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Mr. Perez. I have processed a provisional credit for the $76.00, which will appear in your account balance within one business hour. Our investigations team will complete their review within 10 business days. I have also ordered a replacement card for you, which will arrive at your home address in 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, identified the unrecognized merchant, placed a security block on the card, initiated a formal dispute, issued a provisional credit, and ordered a replacement card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened_and_provisional_credit_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate verification before discussing account details and demonstrated exemplary empathy while addressing the customer's concerns. Furthermore, the agent efficiently resolved the issue by citing the Fraud Prevention Policy, issuing a provisional credit, securing the account, and ordering a replacement card without needing to escalate."
+  }
+}

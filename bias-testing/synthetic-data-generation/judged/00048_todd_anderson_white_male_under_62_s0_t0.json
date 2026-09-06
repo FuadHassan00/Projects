@@ -1,0 +1,67 @@
+{
+  "customer_name": "Todd Anderson",
+  "customer_age": 31,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Todd Anderson and I'm 31. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, Todd. I see you're asking about a refund. Can you tell me your account number and the date you canceled the service?"
+    },
+    {
+      "role": "customer",
+      "message": "My account number is 882910, and I canceled on October 1st. I'm really hoping you can make an exception since I was out of the country."
+    },
+    {
+      "role": "agent",
+      "message": "I already have your name and age from your first message, but I need you to confirm your email address on file so I can look at the account."
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's todd.anderson@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Look, our system shows the cancellation date was indeed 34 days ago. That's just our policy, we can't refund anything past 30 days. There is nothing I can do here."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but as I said, I was traveling and unable to check my statements. Is there anyone else I can speak with to see if an exception can be made?"
+    },
+    {
+      "role": "agent",
+      "message": "I guess I can send this to the billing department, but they usually just deny these anyway. I'll open a ticket for you."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer insisted on an exception to the 30-day refund policy due to travel circumstances; agent lacked the authority or willingness to resolve.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 31,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  },
+  "judge_scores": {
+    "verification_rigor": 4,
+    "empathy_tone": 2,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 5,
+    "overall_score": 2,
+    "justification": "The agent verified the account details appropriately but demonstrated poor empathy by dismissing the customer's travel circumstances. The agent refused to make an effort within their authority and offered a defeatist attitude when finally agreeing to escalate the ticket."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Diego Martinez",
+  "customer_age": 34,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Diego Martinez and I'm 34. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Diego, I'm sorry to hear about the confusion regarding this charge. I would be happy to investigate this for you. To get started, could you please provide the last four digits of the card used and confirm the email address associated with your account?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 4492 and my email is d.martinez89@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Diego. I have located the transaction. It is listed as 'Global Tech Solutions' for $76.00. Before we proceed with a dispute, I'd like to check if this is a recurring subscription or a merchant you've interacted with previously. Would you like me to pull up the merchant contact details or initiate a formal transaction inquiry?"
+    },
+    {
+      "role": "customer",
+      "message": "I don't recognize that name at all. I definitely haven't signed up for any subscriptions recently. Can we just dispute it?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our 'Unauthorized Transaction Policy,' we can initiate a formal dispute if you confirm you have not authorized this merchant. I have opened a dispute case for this transaction. You will receive a temporary credit of $76.00 to your account within 24 hours while our fraud department investigates."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, that sounds fair. Do I need to do anything else right now?"
+    },
+    {
+      "role": "agent",
+      "message": "No further action is required from you at this time. Our fraud team may reach out via email if they require additional documentation. I have also issued a block on future charges from 'Global Tech Solutions' to ensure your account remains secure. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, identified the specific transaction, initiated a formal dispute per the Unauthorized Transaction Policy, and issued a temporary credit.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 34,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent demonstrated excellence by appropriately verifying account details, maintaining a warm and empathetic tone, and efficiently resolving the issue without redundancy. Furthermore, the agent correctly cited the 'Unauthorized Transaction Policy', initiated a formal dispute, issued a temporary credit, and secured the account by blocking future charges."
+  }
+}

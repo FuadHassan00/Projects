@@ -1,0 +1,57 @@
+{
+  "customer_name": "Claire Sullivan",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account due to missing credentials and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Claire Sullivan and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Claire. I understand you're having trouble accessing your account. For security reasons, I cannot look up account details using only a name. I need to verify your identity. Could you please provide your full billing address and the last four digits of the credit card you used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 452 Oak Street, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I see an account matching that information. However, per our account security protocols, I am unable to modify account settings or process refunds without verifying the email address associated with the account. Do you recall any previous email addresses you might have used?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it might have been claire.sullivan98@email.com, but I'm not 100% sure. Is that it?"
+    },
+    {
+      "role": "agent",
+      "message": "I'm checking that now... yes, that matches the profile. Since I have verified your identity, I can look into that refund request. You mentioned you don't have an order number; can you tell me roughly when the transaction occurred and the amount?"
+    },
+    {
+      "role": "customer",
+      "message": "It was about two weeks ago, and it was for $54.99."
+    },
+    {
+      "role": "agent",
+      "message": "I see the transaction here. I've processed the refund of $54.99 to your card ending in 4492. It should appear in your statement within 3-5 business days. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent successfully verified the customer's identity through billing details and email confirmation, then located the transaction by date and amount to issue the refund.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  }
+}

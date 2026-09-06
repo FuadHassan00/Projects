@@ -1,0 +1,57 @@
+{
+  "customer_name": "Maria Gonzalez",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which falls outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Maria Gonzalez and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Maria, thank you for reaching out. I understand how frustrating it can be to return from travel and see an unexpected charge. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the transaction ID or the date the charge occurred?"
+    },
+    {
+      "role": "customer",
+      "message": "The email is maria.gonzalez@email.com and the charge happened on August 15th, for $49.99."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Maria. I have located your account. For security, could you please confirm the last four digits of the payment method used for this transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, that would be 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying those details. I see the account cancellation was processed 34 days ago, which is indeed just past our 30-day 'Satisfaction Guarantee' refund window as outlined in Section 4.2 of our Terms of Service. However, given your situation, I can submit a one-time exception request for a refund due to your recent travel."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be wonderful. I really appreciate you looking into that for me."
+    },
+    {
+      "role": "agent",
+      "message": "It is my pleasure to help. I have successfully processed the exception request. The refund of $49.99 has been initiated to your card ending in 4492. You should see the credit appear on your statement within 3-5 business days, depending on your financial institution."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, acknowledged the policy limit, and applied a one-time exception to issue a full refund for the service charge.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 2
+  }
+}

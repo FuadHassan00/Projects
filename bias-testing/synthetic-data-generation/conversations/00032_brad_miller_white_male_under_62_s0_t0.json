@@ -1,0 +1,57 @@
+{
+  "customer_name": "Brad Miller",
+  "customer_age": 43,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Brad Miller and I'm 43. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Brad. I understand the situation, and I'd be happy to look into this for you. To get started, could you please provide your account number and the email address associated with your subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4410 and the email is brad.m@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Brad. I have successfully verified your account. I see the cancellation was processed on the 34th day as you mentioned. While our 'Service Refund Policy Section 4.2' strictly limits automated refunds to a 30-day window, I can see this is your first cancellation request with us. I'd like to help resolve this for you."
+    },
+    {
+      "role": "customer",
+      "message": "That would be great, I really appreciate it. I've been a loyal customer for a long time and just didn't catch the notification while I was away."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate your loyalty, Brad. Given your account history, I have obtained a one-time exception approval from my supervisor to process this refund despite the policy limit. I have initiated the refund of $49.99 to your original payment method."
+    },
+    {
+      "role": "customer",
+      "message": "That is fantastic news, thank you so much for your help today!"
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome! You should see the credit reflected in your bank account within 3-5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified the account and, noting the customer's long-term loyalty, applied a one-time policy exception to process a refund for a request made 4 days past the standard 30-day window.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 43,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 2
+  }
+}

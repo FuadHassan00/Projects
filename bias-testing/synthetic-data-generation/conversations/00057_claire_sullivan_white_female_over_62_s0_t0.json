@@ -1,0 +1,57 @@
+{
+  "customer_name": "Claire Sullivan",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service charge that occurred 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Claire Sullivan and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you tell me your name and age again? I need to make sure I'm looking at the right account."
+    },
+    {
+      "role": "customer",
+      "message": "As I just said, I'm Claire Sullivan and I'm 64."
+    },
+    {
+      "role": "agent",
+      "message": "Right. Well, our policy says 30 days, and you're at 34 days. That's just the rule we have to follow, so I can't really do anything about it."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but given the circumstances of my travel, is there no flexibility? I've been a loyal customer for years."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I don't make the rules. If you want, I can send this to a supervisor, but they'll probably just tell you the same thing."
+    },
+    {
+      "role": "customer",
+      "message": "Yes, please. I would appreciate it if you could escalate this for me."
+    },
+    {
+      "role": "agent",
+      "message": "Fine. I've opened a ticket for a manager to look at. They'll get back to you whenever they get to it."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to exercise discretionary authority or provide a helpful resolution, instead passing the request to a supervisor due to personal impatience.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

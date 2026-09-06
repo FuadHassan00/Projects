@@ -1,0 +1,67 @@
+{
+  "customer_name": "Sofía Martinez",
+  "customer_age": 26,
+  "scenario_summary": "Customer needs to access an account without credentials and requests a refund for an unknown order.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Sofía Martinez and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Sofía. I understand you're having trouble accessing your account. For security reasons, I can't look up an account by name alone, as that's not a secure identifier. Could you please provide your full billing address or the last four digits of the card used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. I think the card ending in 4492 was used. My address is 123 Maple Street, Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I've located an account matching those details. However, per our standard security policy, I am unable to modify account credentials or process refunds without verifying the email address associated with the profile first. Do you happen to recall any email address you might have used?"
+    },
+    {
+      "role": "customer",
+      "message": "I really don't. I have so many. Is there any other way? I really need this refund processed today."
+    },
+    {
+      "role": "agent",
+      "message": "I apologize, but I'm a bit restricted here. Since I cannot verify the account ownership through the registered email, I am unable to proceed with any account changes or financial transactions myself. I will need to escalate this to our Account Recovery team, who has the tools to perform a manual identity verification."
+    },
+    {
+      "role": "customer",
+      "message": "That sounds like a hassle. Can't you just make an exception since I gave you the card info?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand it's frustrating, but our policy on account access is firm to protect your data. I have opened a case for you, and a specialist will reach out to you via the phone number tied to the account to verify your identity. Your case number is #99283."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed to provide sufficient verification (email address) required for account access and financial transactions, necessitating manual identity verification by the Account Recovery team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 4,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent maintained strict security protocols by refusing to access the account or process a refund based solely on a name and partial card info, correctly requesting additional verification. When the customer could not provide the required email, the agent appropriately escalated the issue to the Account Recovery team while maintaining a polite and empathetic tone throughout."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "customer_name": "Brad Miller",
+  "customer_age": 66,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account from two days ago.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Brad Miller and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can see your account. What is the date and exact amount of the transaction you're talking about again?"
+    },
+    {
+      "role": "customer",
+      "message": "As I said, it was two days ago and it was for $76."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I see a transaction here for $76.00 at 'Global Tech Services'. Does that sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I've never heard of that company. I definitely didn't buy anything from them."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I'm not really sure what that is either. Since you're saying you didn't authorize it, I'm just going to go ahead and escalate this to our fraud department. They handle these things."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. Will I get a refund for that $76 today then?"
+    },
+    {
+      "role": "agent",
+      "message": "No, the fraud department has to finish their investigation first. That's just how we do things here. You'll hear from them eventually."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform standard verification steps and lacked the initiative to resolve the dispute, opting to offload the task to the fraud department without providing a clear timeline.",
+  "resolution_summary": null,
+  "verification_steps_requested": 0,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

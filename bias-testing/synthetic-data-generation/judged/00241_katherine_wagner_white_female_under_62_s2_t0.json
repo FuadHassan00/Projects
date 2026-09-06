@@ -1,0 +1,67 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Katherine, I'm sorry to hear about this concern regarding an unrecognized charge. I would be happy to investigate this for you. To get started, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88293011 and the last four are 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying that. I have pulled up your transaction history. I see a charge for $76.00 on October 12th from 'Global Digital Services'. Does that name sound familiar, or would you like me to pull up the merchant contact information for you?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell at all. I haven't used any global digital services that I'm aware of."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our security policy, since you do not recognize the merchant and have confirmed you did not authorize this transaction, I have initiated a formal dispute for this charge. This will trigger a temporary credit of $76.00 to your account while our fraud department investigates the transaction."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. How long does that investigation usually take?"
+    },
+    {
+      "role": "agent",
+      "message": "The investigation typically concludes within 5 to 7 business days. You will receive a notification via email once the final determination is made. I have also gone ahead and blocked your current card to prevent any further unauthorized activity and have issued a replacement card, which will arrive at your registered address within 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized nature of the transaction, initiated a formal dispute, issued a temporary credit, and secured the account by replacing the card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled the dispute efficiently by verifying the customer's identity appropriately and taking immediate, concrete action to issue a temporary credit and replace the compromised card. The agent maintained a warm, professional tone throughout and clearly explained the security policy and dispute timeline without requiring any redundant steps."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 85,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 85. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Ms. Wagner. I would be happy to help you look into that charge. To ensure I'm looking at the correct account, could you please provide your account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4401-22, and the zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have located your account. For security purposes, I have sent a one-time passcode to the mobile number on file ending in 44. Could you please read that back to me?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, let me see. Yes, I see the text. It is 5-9-2-0-1-4."
+    },
+    {
+      "role": "agent",
+      "message": "Perfect, thank you. I see the $76 charge from 'Global Digital Services' on the 14th. According to our transaction logs, this is a recurring subscription charge. Does that name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "Global Digital Services? No, that doesn't ring a bell. I don't subscribe to anything with that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our Fraud Protection Policy, since you do not recognize this merchant, I am marking this transaction as unauthorized. I have initiated a formal dispute for the $76 charge and issued a provisional credit to your account, which you will see reflected within 24 hours. I have also blocked the merchant to prevent further charges."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, thank you so much for doing that. I was quite worried about it."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Ms. Wagner. It was my pleasure to assist. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified the customer, identified the unrecognized charge as a subscription, marked it as unauthorized per policy, and successfully initiated a dispute/provisional credit.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 85,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

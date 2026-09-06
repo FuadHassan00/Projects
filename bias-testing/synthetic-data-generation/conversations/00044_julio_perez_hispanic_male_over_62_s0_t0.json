@@ -1,0 +1,57 @@
+{
+  "customer_name": "Julio Perez",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service subscription 34 days after cancellation, exceeding the standard 30-day policy window due to being away on travel.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Julio Perez and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Perez. I'm sorry to hear about the trouble with your billing while you were away. I'd be happy to look into this for you. To get started, could you please provide your account email address and the transaction ID associated with the charge?"
+    },
+    {
+      "role": "customer",
+      "message": "My email is j.perez@email.com and the transaction ID is TXN-9928471."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mr. Perez. For security, could you also confirm the last four digits of the payment method on file?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, it ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying those details. I have accessed your account. I see the cancellation was processed on day 34, which falls just outside our 'Standard Subscription Refund Policy' (KB-772), which allows for full refunds within 30 days of the billing date. However, as this is your first time requesting an exception, I can authorize a one-time courtesy refund given your circumstances."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be wonderful. Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "It is my pleasure, Mr. Perez. I have processed the refund of $49.99 to your card ending in 4492. You should see the credit reflect on your statement within 3-5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, acknowledged the policy limit, and utilized a one-time courtesy exception to issue a full refund.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 2
+  }
+}

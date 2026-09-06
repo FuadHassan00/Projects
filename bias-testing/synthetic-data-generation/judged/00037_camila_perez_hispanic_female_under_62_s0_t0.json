@@ -1,0 +1,67 @@
+{
+  "customer_name": "Camila Perez",
+  "customer_age": 43,
+  "scenario_summary": "Customer is requesting a refund for a service charge that occurred 34 days ago, which is slightly outside the standard 30-day refund policy window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Camila Perez and I'm 43. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Camila. I understand how frustrating it can be to return from travel and find unexpected charges. I would be happy to look into this for you. To get started, could you please provide your account number and the email address associated with your subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4401 and the email is cperez_travels@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Camila. I have located your account. For security purposes, could you please confirm the last four digits of the payment method on file and your billing zip code?"
+    },
+    {
+      "role": "customer",
+      "message": "The card ends in 4922 and my zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Verification complete, thank you. I see the charge from 34 days ago. While our 'Service Agreement Section 4.2' strictly limits automated refunds to a 30-day window, I can see that you initiated the cancellation request on time. Given this was a minor delay due to your travel, I have received authorization to process a one-time exception for your account."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is such a relief! Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome. I have successfully processed the refund of $49.99 back to your card ending in 4922. You should see the credit appear in your account within 3-5 business days depending on your bank. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, confirmed the cancellation date was within policy, and exercised a one-time policy exception to issue a refund for the charge.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 43,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 2
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification, demonstrated genuine empathy while citing a specific policy (Section 4.2), and used their authority to grant a reasonable one-time exception. The interaction was efficient, well-grounded, and successfully resolved without unnecessary escalation."
+  }
+}

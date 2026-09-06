@@ -1,0 +1,65 @@
+{
+  "customer_name": "Soo-ah Kim",
+  "customer_age": 69,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Soo-ah Kim and I'm 69. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Soo-ah, I can certainly help you look into that charge. To start, could you please provide your account number and verify your billing address on file?"
+    },
+    {
+      "role": "customer",
+      "message": "My account number is 8829-4410 and I live at 124 Maple Street, Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Just to be absolutely sure, can you also confirm the last four digits of the phone number associated with your account?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 5592."
+    },
+    {
+      "role": "agent",
+      "message": "Perfect, thank you. I see the charge here for $76.00 from 'Global Tech Services'. Does that name sound familiar at all, perhaps a subscription renewal?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I don't have any subscriptions with a company by that name. I'm quite sure I didn't authorize this."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our standard Terms of Service, I am initiating a formal dispute for this unauthorized transaction. I have flagged this as a potential fraudulent charge."
+    },
+    {
+      "role": "customer",
+      "message": "Does that mean I get my money back now?"
+    },
+    {
+      "role": "agent",
+      "message": "I have successfully opened the dispute case, number 99281. A provisional credit for the $76 has been applied to your account while the investigation is completed. You should see that reflected in your balance within 24 hours."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified the customer's identity, confirmed the unrecognized nature of the charge, and initiated a formal dispute with an immediate provisional credit.",
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 69,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  }
+}

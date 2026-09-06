@@ -1,0 +1,75 @@
+{
+  "customer_name": "Camila Perez",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account from two days ago.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Camila Perez and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Camila, I'm sorry to hear about this concerning charge. I would be happy to investigate this for you. To ensure I'm looking at the correct account, could you please provide your account number and the email address associated with your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4410 and the email is camila.perez@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. For security verification, please confirm the zip code on file and the date of your last known legitimate transaction."
+    },
+    {
+      "role": "customer",
+      "message": "The zip code is 90210, and my last purchase was at a grocery store on Tuesday for $45."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Camila. I have successfully verified your account. I see the $76 charge from two days ago labeled 'GLOBAL-TECH-SVCS'. Since this merchant does not match your typical spending patterns, I have checked our internal transaction logs. It appears this was a recurring subscription charge that was triggered after a trial period expired. Does that sound familiar?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh! I think I remember signing up for a trial for some software, but I completely forgot to cancel it. I definitely didn't intend to pay for a full subscription."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our 'Subscription Management Policy', we are authorized to issue a one-time courtesy refund for accidental subscription renewals if requested within 48 hours of the charge. Since you are within that window, I have processed a full refund of $76 to your original payment method. You should see the credit reflect within 3-5 business days."
+    },
+    {
+      "role": "customer",
+      "message": "That is such a relief, thank you so much for your help!"
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome, Camila. I have also gone ahead and cancelled the subscription service for you to prevent any future charges. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent identified the charge as a subscription renewal, verified the customer's eligibility under the company's subscription refund policy, and processed a full refund while cancelling the service.",
+  "verification_steps_requested": 4,
+  "turn_count": 10,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent executed appropriate security verification, maintained a warm and empathetic tone, and efficiently identified the charge without redundant questions. Furthermore, the agent correctly cited the 'Subscription Management Policy' to process a courtesy refund and proactively cancelled the subscription, demonstrating exemplary problem-solving within their authority."
+  }
+}

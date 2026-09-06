@@ -1,0 +1,49 @@
+{
+  "customer_name": "DeShawn Jefferson",
+  "customer_age": 66,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is DeShawn Jefferson and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see you're asking about a charge. Can you tell me the exact date and the merchant name for this $76 transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "It was two days ago, on the 14th, and the merchant is listed as 'Global Tech Solutions'."
+    },
+    {
+      "role": "agent",
+      "message": "Right, I see it. Look, I don't have the tools to verify if this was a mistake or not. You'll have to talk to someone else about this. I'm just going to escalate this to our billing specialist team."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. Can you at least tell me if I need to do anything else, or if my account is safe from further charges?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you I'm escalating it. You'll get an email eventually. I can't really do anything else right now."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform standard verification or investigation, citing lack of tools and inability to handle the request.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 6,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

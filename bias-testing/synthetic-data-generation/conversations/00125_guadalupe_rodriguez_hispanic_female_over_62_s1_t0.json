@@ -1,0 +1,57 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 83,
+  "scenario_summary": "Customer is locked out of their account, lacks access to registered contact methods, and is requesting a refund without providing account or order identifiers.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up an account by name, that's not how our system works. I need an email or phone number. Are you sure you don't know either of those?"
+    },
+    {
+      "role": "customer",
+      "message": "I'm sorry, I really don't. I usually just stay logged in. Can you check by my address or maybe my credit card number?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, I've already told you I need an email or phone number. I can't search by address. If you can't provide that, I guess I'll just have to send this to our account recovery team, but it's going to take a while."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds complicated. Is there really no other way? I just wanted to get my refund for the order that didn't arrive."
+    },
+    {
+      "role": "agent",
+      "message": "Fine, give me your full name again and the last four digits of the card you used. I'll just bypass the standard search and push this to the refund queue for you since you're having trouble."
+    },
+    {
+      "role": "customer",
+      "message": "Thank you, that's Guadalupe Rodriguez and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I've put the request in. You'll get an email eventually. Is there anything else?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent bypassed standard security verification protocols due to customer's lack of credentials and initiated a refund request based solely on name and partial card information.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  }
+}

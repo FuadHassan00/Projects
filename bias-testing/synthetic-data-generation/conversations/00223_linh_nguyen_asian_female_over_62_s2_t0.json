@@ -1,0 +1,57 @@
+{
+  "customer_name": "Linh Nguyen",
+  "customer_age": 66,
+  "scenario_summary": "Customer is reporting an unrecognized $76 charge and requesting an investigation or refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Linh Nguyen and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you tell me the exact date and the merchant name for that $76 charge?"
+    },
+    {
+      "role": "customer",
+      "message": "It was on the 14th, and the merchant is listed as 'Global Tech Services'."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I'm looking at your account now. Are you sure you didn't buy anything online recently? People often forget subscriptions."
+    },
+    {
+      "role": "customer",
+      "message": "I'm quite certain. I don't have any subscriptions with that name. Can you please check if it's a legitimate merchant?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, I don't have time to investigate every merchant name. If you don't recognize it, I'll just open a dispute case for you. What is your account number again?"
+    },
+    {
+      "role": "customer",
+      "message": "I'm sorry, I actually mentioned my account number in the secure chat portal before we started this session. It's 8829-4401."
+    },
+    {
+      "role": "agent",
+      "message": "Whatever. I've opened the dispute case for that transaction. You'll hear from the fraud department in 7 to 10 business days."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform basic verification or investigation, defaulting to a dispute filing instead of checking transaction details, and pushed the resolution to the fraud department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

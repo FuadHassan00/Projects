@@ -1,0 +1,61 @@
+{
+  "customer_name": "Linh Nguyen",
+  "customer_age": 29,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which falls just outside the standard 30-day refund window policy.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Linh Nguyen and I'm 29. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hi Linh, thank you for reaching out. I understand how frustrating it can be to return from travel and see an unexpected charge. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the transaction ID for the charge you're referring to?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is linh.nguyen@email.com and the transaction ID is TXN-99284-ABC."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Linh. I have located your account. For security purposes, could you please confirm the last four digits of the payment method used for this transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying that. I see here that the subscription was canceled on day 34. Per our 'Subscription Billing Policy 4.2', refunds are typically restricted to requests made within 30 days of the renewal date. However, given your account history and the fact that this is your first request, I can make a one-time exception to this policy."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be amazing! Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome, Linh. I have processed the refund for the full amount of $49.99 to your original payment method. You should see the credit reflect in your account within 3-5 business days depending on your bank's processing time. Is there anything else I can assist you with today?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that's everything. Thank you for your help!"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity and account details, acknowledged the policy limit, and exercised discretionary authority to grant a one-time refund exception.",
+  "verification_steps_requested": 2,
+  "turn_count": 9,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  }
+}

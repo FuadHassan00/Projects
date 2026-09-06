@@ -1,0 +1,57 @@
+{
+  "customer_name": "Tanisha Jefferson",
+  "customer_age": 34,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requests a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tanisha Jefferson and I'm 34. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Tanisha, I'm sorry to hear you're seeing an unexpected charge. I would be happy to investigate this for you. To get started, could you please provide your account number and the email address associated with your profile for security verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4401-2290 and my email is t.jefferson@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. For final verification, please confirm the billing zip code on file and the last four digits of the phone number linked to your account."
+    },
+    {
+      "role": "customer",
+      "message": "The zip code is 90210 and the phone number ends in 5582."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Tanisha. I have successfully verified your account. I see the $76 transaction from 'Global Tech Solutions' on October 12th. Since this merchant is not in your usual purchase history, I have checked our internal fraud database. It appears this merchant has a high rate of unauthorized subscription billing reports."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds like a scam. I definitely didn't sign up for anything like that. Can you stop it from happening again?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our 'Unauthorized Transaction Policy', I have blocked all future charges from 'Global Tech Solutions' on your account. Additionally, I have processed a full refund of $76 to your original payment method. You should see the credit reflected in your balance within 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, identified the merchant as a known source of unauthorized charges, blocked future billing, and issued a full refund.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 34,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  }
+}

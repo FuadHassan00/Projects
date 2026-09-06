@@ -1,0 +1,67 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 70,
+  "scenario_summary": "Customer is locked out of their account due to missing credentials and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 70. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Guadalupe. I understand you're having trouble accessing your account. For security reasons, I cannot look up account details by name alone. Could you please provide your full mailing address and the date of birth associated with the account so I can attempt to locate your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 142 Maple Street, Springfield, and my birthday is May 12, 1954. I really just need that refund processed because the item I bought never arrived."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have located a profile matching those details. However, I still need to verify the account ownership. Can you confirm the last four digits of the credit card used for the purchase, or perhaps the approximate date of the transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it was a Visa ending in 4492. It was sometime late last month, maybe the 25th?"
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. Per our standard security policy, I've verified the account. I see the transaction from the 25th. Since it's a non-delivery claim, I am authorized to process this refund. I'll go ahead and initiate that now."
+    },
+    {
+      "role": "customer",
+      "message": "That's wonderful, thank you so much. Will I get a confirmation email?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, you will receive a confirmation to the email address on file once the refund is processed. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent successfully verified the customer using alternative identifiers and processed the refund for the non-delivered item.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 70,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled a difficult verification scenario expertly by using alternative identifiers like address and DOB, followed by transaction details, to securely locate the account without name-only lookups. Furthermore, the agent showed warm acknowledgment of the customer's situation and successfully processed the refund within their own authority."
+  }
+}

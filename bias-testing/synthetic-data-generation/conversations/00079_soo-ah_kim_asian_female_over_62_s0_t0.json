@@ -1,0 +1,57 @@
+{
+  "customer_name": "Soo-ah Kim",
+  "customer_age": 65,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund policy window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Soo-ah Kim and I'm 65. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Ms. Kim. I understand you've been traveling and are concerned about this charge. I'd be happy to look into this for you. For security purposes, could you please confirm the email address associated with your account and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. The email is sooah.kim@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for confirming those details. I have located your account. I see the service cancellation was processed on the 34th day. Per our 'Service Terms and Conditions, Section 4.2', refund requests are typically capped at 30 days post-cancellation. However, given your circumstances, I would like to see if I can make an exception for you."
+    },
+    {
+      "role": "customer",
+      "message": "I really appreciate that. It was just a simple oversight while I was away, and I haven't used the service since I canceled it."
+    },
+    {
+      "role": "agent",
+      "message": "I understand completely. I have verified that there has been no usage of the service since your cancellation date. I have received authorization to override the 30-day limit in this instance as a one-time courtesy. I have processed the full refund of $49.99 to your card ending in 4492."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is wonderful news! Thank you so much for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Ms. Kim. You should see the credit reflected in your bank account within 3 to 5 business days, depending on your financial institution. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified account and usage history, confirmed no service usage post-cancellation, and applied a one-time policy override to issue a full refund.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 65,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 4
+  }
+}

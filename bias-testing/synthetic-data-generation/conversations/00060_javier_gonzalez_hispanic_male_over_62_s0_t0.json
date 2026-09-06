@@ -1,0 +1,57 @@
+{
+  "customer_name": "Javier Gonzalez",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day window due to travel.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Javier Gonzalez and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hi Javier. I see. Our policy is 30 days, so you're outside that window. I'm not sure what you expect me to do about that."
+    },
+    {
+      "role": "customer",
+      "message": "I understand it's past the window, but I was traveling and didn't have access to my account. Is there any exception for this?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't have any exceptions. Can you give me your account number so I can at least see what account you're talking about?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 8829-4401-22."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see the account. You said you canceled 34 days ago? I'm just going to go ahead and put a request in for a refund, but I don't know if it will be approved. I'm escalating this to the billing department."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, you're escalating it? Can't you just process the refund yourself? I've been a customer for a long time."
+    },
+    {
+      "role": "agent",
+      "message": "I don't have the authority to override the 30-day rule. It has to go to a specialist. They will contact you eventually."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent claimed lack of authority to override standard policy and deferred the decision to a specialist department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

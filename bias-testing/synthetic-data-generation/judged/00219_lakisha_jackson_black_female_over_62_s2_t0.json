@@ -1,0 +1,67 @@
+{
+  "customer_name": "Lakisha Jackson",
+  "customer_age": 66,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Lakisha Jackson and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can look into that. Can you tell me your name and age again so I can pull up the account?"
+    },
+    {
+      "role": "customer",
+      "message": "I just said it, but it's Lakisha Jackson and I'm 66."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I see the charge for $76. It says 'Retail Purchase'. Since you don't recognize it, I'm just going to go ahead and escalate this to our fraud department. They handle all these kinds of things."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, is that necessary? Can't you just see where the charge came from? I don't want to go through a whole fraud investigation if it's just a mistake."
+    },
+    {
+      "role": "agent",
+      "message": "Look, that's just our policy. If you don't recognize a charge, it has to go to the fraud queue. I'm not allowed to touch it."
+    },
+    {
+      "role": "customer",
+      "message": "I see. Well, if that's what you have to do, then go ahead. Will I be notified when they look at it?"
+    },
+    {
+      "role": "agent",
+      "message": "Yeah, someone will call you eventually. I've submitted the case. Have a good day."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent claimed policy requires all unrecognized charges to be handled by the fraud department, bypassing the ability to investigate merchant details or resolve simple billing errors.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent performed poorly across all dimensions by asking the customer to repeat information immediately after stating it and abruptly dismissing the customer's concerns. Furthermore, the agent offered zero concrete effort to investigate the charge before improperly escalating a routine billing inquiry to the fraud department with vague policy references."
+  }
+}

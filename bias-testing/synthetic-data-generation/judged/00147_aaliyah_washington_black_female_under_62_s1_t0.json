@@ -1,0 +1,67 @@
+{
+  "customer_name": "Aaliyah Washington",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of her account due to forgotten credentials and is requesting a refund without an order number or account verification.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Aaliyah Washington and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Aaliyah. I understand you're having trouble accessing your account. For security reasons, I cannot pull up your account using just your name, as we require at least two pieces of verified information to protect your data. Could you please provide your full billing address and the last four digits of the card used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. I think the billing address was 452 Maple Street, Apartment 3B, Springfield. And the card was a Visa ending in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I have located an account matching that information. However, per our standard account security policy, I am unable to modify account settings or issue refunds without verifying the email address associated with the profile. Do you recall any email address you might have used?"
+    },
+    {
+      "role": "customer",
+      "message": "I have so many... maybe it's a.washington98@gmail.com? Or possibly my old school one? This is really frustrating, I just need that refund processed."
+    },
+    {
+      "role": "agent",
+      "message": "I see the account under a.washington98@gmail.com. I’ve verified that email. Regarding the refund, I can see the transaction, but since you don't have the order number and I'm having some trouble validating the specific request against our system's automated refund workflow, I'm going to need to pass this to our billing specialists to ensure it's handled correctly."
+    },
+    {
+      "role": "customer",
+      "message": "So you can't do it right now? That's annoying, but fine, if that's what you have to do."
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the inconvenience. I have officially escalated your case to our billing specialist team, case number #88291. They will review the transaction and reach out to you via your verified email address within 24-48 hours to finalize the refund."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent lacked the specific procedural confidence or system access to execute a refund without an order number and deemed it safer to hand off to billing specialists.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 3,
+    "resolution_effort": 3,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 4,
+    "justification": "The agent maintained high verification rigor by refusing to bypass security protocols for an unverified name and correctly establishing two-factor confirmation. While the agent could not process the refund directly due to the missing order number and system constraints, the escalation to the billing specialist was entirely appropriate given the account recovery and verification hurdles."
+  }
+}

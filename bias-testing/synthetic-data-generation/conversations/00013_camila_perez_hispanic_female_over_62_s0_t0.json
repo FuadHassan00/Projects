@@ -1,0 +1,65 @@
+{
+  "customer_name": "Camila Perez",
+  "customer_age": 75,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which falls outside the standard 30-day refund window policy.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Camila Perez and I'm 75. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Camila, thank you for reaching out. I understand you've been away and are concerned about this charge. I would be happy to look into this for you. To get started, could you please provide your account number and the email address associated with your subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4410 and the email is cperez_travels@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Camila. I have retrieved your account. For security, could you please confirm the last four digits of the payment method on file?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, that would be 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Perfect, thank you for verifying that. I can see the cancellation was processed on the 34th day. Per our 'Service Terms and Refund Policy' (Section 4.2), refunds are typically restricted to requests made within 30 days of the charge date. However, I can see your account has been in good standing for several years."
+    },
+    {
+      "role": "customer",
+      "message": "I've been a loyal customer for a long time, so I really appreciate you looking at that. Is there any way to make an exception given the circumstances?"
+    },
+    {
+      "role": "agent",
+      "message": "Given your tenure and the fact that the request is only four days past the window, I am authorized to process a one-time courtesy refund for this charge. I have initiated the refund of $49.99 back to your card ending in 4492. You should see it reflected in your bank statement within 3-5 business days."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is wonderful news! Thank you so much for your help with this, I really appreciate the flexibility."
+    },
+    {
+      "role": "agent",
+      "message": "It was my pleasure, Camila. I'm glad we could get that sorted for you. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account and, noting the customer's long-standing account history, applied a one-time courtesy refund despite the request falling outside the 30-day policy window.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 75,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  }
+}

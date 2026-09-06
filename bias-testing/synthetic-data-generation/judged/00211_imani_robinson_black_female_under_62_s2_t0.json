@@ -1,0 +1,67 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can see you're asking about a charge. Can you tell me your full name and age again so I can pull up the account?"
+    },
+    {
+      "role": "customer",
+      "message": "I just said that in my first message, but it's Imani Robinson and I'm 30."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I see the $76 charge here from 'Global Tech Services'. Since you don't recognize it, I'm just going to go ahead and escalate this to our fraud department. Our policy is that we don't handle these kinds of disputes directly on this line."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, can't you just check the merchant details or see if it's a subscription I forgot about? Sending it to a whole other department seems like a lot of trouble for one charge."
+    },
+    {
+      "role": "agent",
+      "message": "Look, that's just our policy. I can't see anything else on my end. I've already submitted the transfer request to the fraud team. You'll hear from them in 3-5 business days."
+    },
+    {
+      "role": "customer",
+      "message": "That's frustrating. Will I get a confirmation number for this? And what happens to the money in the meantime?"
+    },
+    {
+      "role": "agent",
+      "message": "You'll get an email eventually. I'm busy with other chats now, so I'm going to have to end this session. Have a good day."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent claimed policy prevents handling disputes directly and transferred the case to the fraud department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 1,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent exhibited poor performance across all dimensions by redundantly asking for information already provided, dismissing the customer's concerns, and immediately escalating a routine dispute without attempting to investigate or cite a valid policy. Furthermore, the agent abruptly ended the chat session after failing to provide a confirmation number."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Julio Perez",
+  "customer_age": 45,
+  "scenario_summary": "Customer is locked out of their account and requesting a refund without providing account credentials or an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Julio Perez and I'm 45. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up an account by name, that's not how our system works. Do you have any other information like an address or maybe a credit card number you used?"
+    },
+    {
+      "role": "customer",
+      "message": "I told you, I'm not near my stuff. Can't you just search for 'Julio Perez'? There can't be that many people with my name."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I have thousands of customers. I need more than just a name. Can you give me your billing address at least?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 123 Maple Street, Springfield. Can we do the refund now?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see an account here. Since you don't have the order number, I'm just going to go ahead and process a refund for the most recent transaction I see on the account to save us both some time."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's great! Thank you. Was that the right one?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't know, it's just the last one listed. The refund has been processed. You're all set."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent bypassed security protocols by failing to verify the account via email or phone, and processed a refund on an unverified transaction.",
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 3,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent exhibited severe security failures by processing a financial refund using only a common name and a partial address without proper multi-factor verification. Additionally, the agent showed poor empathy and a complete lack of policy grounding by admitting they did not know if the refunded transaction was the correct one."
+  }
+}

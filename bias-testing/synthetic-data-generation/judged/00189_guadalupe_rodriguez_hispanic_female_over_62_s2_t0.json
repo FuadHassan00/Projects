@@ -1,0 +1,75 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 80,
+  "scenario_summary": "Customer is reporting an unrecognized $76 charge and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Guadalupe, I would be happy to help you look into this charge. To ensure I'm accessing the correct account, could you please provide your full account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4401-2293 and I live in zip code 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for confirming those details. I have pulled up your transaction history. I see a charge for $76.00 from 'Global Tech Services' on October 14th. Does that name sound familiar, or would you like me to pull up the merchant contact information for you?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't mean anything to me at all. I definitely didn't buy anything from a tech service."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our 'Unauthorized Transaction Policy,' if a charge is confirmed as unrecognized, we initiate a formal dispute to recover the funds. I have flagged this transaction as unauthorized. I am now initiating the dispute process and issuing a provisional credit of $76.00 to your account, which will appear within 24 hours."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is a relief. Does this mean I need to get a new card as well?"
+    },
+    {
+      "role": "agent",
+      "message": "That is a great question. Because this was an unauthorized charge, our security protocol requires us to cancel your current card to prevent further fraudulent activity. I have processed a replacement card for you, which will arrive at your registered address within 3-5 business days. Your current card will be deactivated immediately."
+    },
+    {
+      "role": "customer",
+      "message": "That makes sense. Thank you so much for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Guadalupe. I've sent a summary of this dispute and the card replacement details to your email. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, identified the unauthorized transaction, initiated a formal dispute, issued a provisional credit, and proactively replaced the compromised credit card.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent efficiently verified the account using appropriate security checks and demonstrated high empathy and professionalism. Furthermore, the agent correctly cited the Unauthorized Transaction Policy, issued a provisional credit, and proactively handled the card replacement within their authority."
+  }
+}

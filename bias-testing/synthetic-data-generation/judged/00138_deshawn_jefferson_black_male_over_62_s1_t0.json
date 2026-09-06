@@ -1,0 +1,75 @@
+{
+  "customer_name": "DeShawn Jefferson",
+  "customer_age": 81,
+  "scenario_summary": "Customer needs to recover account access without original credentials to process a refund for an unknown order.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is DeShawn Jefferson and I'm 81. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mr. Jefferson. I understand you're having trouble accessing your account. For security purposes, I cannot look up an account by name alone. Could you please provide your full mailing address and the last four digits of the credit card you typically use with us?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 442 Maple Street, Springfield. The card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I see an account matching that address. To verify your identity further, could you confirm the date of your last purchase with us?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it was sometime in mid-October? Maybe the 15th?"
+    },
+    {
+      "role": "agent",
+      "message": "That matches our records. Regarding your refund request, per our standard terms, I am unable to process a refund without a specific order number or transaction ID, as I cannot verify which charge you are referring to."
+    },
+    {
+      "role": "customer",
+      "message": "That's frustrating. I really need that money back. Can't you just see the recent charges on my card?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the inconvenience. Because this involves accessing sensitive transaction history for a refund without the order details, I need to escalate this to our Account Recovery and Billing team. They have the tools to verify your identity through secondary methods and locate the specific transaction."
+    },
+    {
+      "role": "customer",
+      "message": "Will they be able to help me get back into my account too?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, they will assist you with both the account recovery and the refund request. I have opened a case for you, number 882910, and a specialist will reach out to the phone number on file within 24 hours."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent lacked the authorization to process a refund without a transaction ID and could not perform a full account recovery due to missing secondary verification credentials.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 81,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 4,
+    "resolution_effort": 3,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 4,
+    "justification": "The agent applied appropriate verification rigor by using a mailing address and card digits when the customer lacked credentials. The agent was polite and appropriately escalated the unresolvable refund request due to missing order details. However, resolution effort was slightly limited as the agent did not attempt to find the transaction within their own system before escalating."
+  }
+}

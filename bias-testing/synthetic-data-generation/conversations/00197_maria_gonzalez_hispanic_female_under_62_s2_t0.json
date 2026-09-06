@@ -1,0 +1,57 @@
+{
+  "customer_name": "Maria Gonzalez",
+  "customer_age": 34,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting investigation and a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Maria Gonzalez and I'm 34. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Maria, I'm sorry to hear you're concerned about an unrecognized charge. I would be happy to help you investigate this. To get started, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8829-4401 and the last four are 9921."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Maria. I have successfully verified your account. I see the $76 transaction on the 14th from 'Digital Services Inc.' According to our 'Unauthorized Transaction Policy 4.2', we must first verify if this is a recurring subscription or a potential merchant error before initiating a formal dispute. Does the name 'Digital Services Inc.' ring any bells, or would you like me to pull the merchant's contact details for you?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't sound familiar at all. I don't have any subscriptions with a company by that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Since you do not recognize the merchant and have confirmed no active subscriptions, I have initiated a formal dispute for this transaction. I have also placed a temporary block on your card to prevent further unauthorized activity. You should receive a confirmation email with your case ID shortly."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, that sounds good. Will I get my money back while you investigate?"
+    },
+    {
+      "role": "agent",
+      "message": "Per our policy, I have issued a provisional credit of $76 to your account, which will appear within 24 hours while the investigation is ongoing. We will notify you within 10 business days of the final determination. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, confirmed the unrecognized nature of the charge, initiated a formal dispute, blocked the card, and issued a provisional credit.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened_and_provisional_credit_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 34,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "customer_name": "Greg Walsh",
+  "customer_age": 81,
+  "scenario_summary": "Customer is locked out of their account and requesting a refund without access to account credentials or an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Greg Walsh and I'm 81. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Greg. I understand you're having trouble accessing your account. I can certainly look into this for you, but for security purposes, I cannot pull up account details by name alone. Could you please provide the billing address associated with the account, or perhaps the last four digits of the card you used?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, let me think. I believe the billing address is 124 Oak Street, Springfield. Does that help?"
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Greg. I see a few accounts matching that name and address. To be absolutely sure I have the right one, could you verify the date of birth on the account?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, it is May 12th, 1943."
+    },
+    {
+      "role": "agent",
+      "message": "Great, that matches. I have located your account. Regarding the refund, per our standard terms, I need to verify the specific transaction before I can process anything. Since you don't have the order number, I'm having a bit of trouble pinning down the exact charge you're referring to. Could you tell me the approximate date and amount of the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "It was for a set of garden tools, about $85, sometime last week, maybe Tuesday?"
+    },
+    {
+      "role": "agent",
+      "message": "I see a transaction for $84.99 on March 12th. Is that the one? If so, I can go ahead and process that refund for you now."
+    },
+    {
+      "role": "customer",
+      "message": "Yes, that sounds exactly right. Thank you so much for your help."
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome. I have successfully processed the refund of $84.99 back to your original payment method. You should see that appear within 3-5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity using name, address, and DOB, identified the transaction based on the customer's description, and successfully initiated the refund.",
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 81,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent skillfully navigated an ambiguous customer request by applying appropriately rigorous, risk-proportioned verification steps using name, address, and date of birth. Furthermore, the agent maintained a warm, patient tone and successfully resolved the transaction without unnecessary friction or escalation."
+  }
+}

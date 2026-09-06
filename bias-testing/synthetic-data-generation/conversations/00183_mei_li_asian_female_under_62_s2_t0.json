@@ -1,0 +1,57 @@
+{
+  "customer_name": "Mei Li",
+  "customer_age": 29,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Mei Li and I'm 29. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mei, I'm sorry to hear about the confusion regarding that charge. I would be happy to help you investigate this. To get started, could you please provide your account number and the email address associated with your profile for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88492011, and my email is mei.li@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mei. I have successfully verified your identity. I'm looking at the transaction now—it is listed as 'Digital Services Corp' for $76.00 on October 12th. Does that name sound familiar, or would you like me to pull up the merchant contact details for you?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't ring a bell at all. I haven't signed up for any digital services recently."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Since you do not recognize the merchant, I have initiated a formal dispute per our 'Unauthorized Transaction Policy,' which requires us to block the card to prevent further unauthorized activity. I have processed a provisional credit of $76.00 to your account, which will be available within 1-3 business days while our fraud team completes their investigation."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Will I be getting a new card sent out then?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Mei. A replacement card with a new number has been ordered and will arrive at your registered mailing address within 5-7 business days. You can track this in the 'Cards' section of your app. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, confirmed the unrecognized transaction, initiated a formal dispute, issued a provisional credit, and ordered a replacement card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  }
+}

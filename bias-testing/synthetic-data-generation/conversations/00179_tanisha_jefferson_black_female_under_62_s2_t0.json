@@ -1,0 +1,57 @@
+{
+  "customer_name": "Tanisha Jefferson",
+  "customer_age": 29,
+  "scenario_summary": "Customer is disputing an unrecognized charge of $76 and requesting a refund if the transaction is found to be unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tanisha Jefferson and I'm 29. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Tanisha, I'm sorry to hear you're concerned about an unrecognized charge. I would be happy to investigate this for you. To ensure your account security, could you please confirm the last four digits of your account number and the email address associated with your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the last four are 4492, and my email is tanisha.j@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Tanisha. I have located your account. I see the transaction for $76.00 dated two days ago from 'Global Merchant Services'. Does that name sound familiar, or is it definitely unrecognized?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't sound familiar at all. I haven't shopped at any global merchants recently."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our security policy, since you do not recognize the merchant, I have performed a quick check of your recent device logins and location data, which appear consistent with your usual activity. However, as this is an unauthorized transaction, I have initiated a formal dispute for this $76.00 charge."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, that sounds good. What happens next?"
+    },
+    {
+      "role": "agent",
+      "message": "The dispute is now open, and a provisional credit for $76.00 has been applied to your account immediately while our fraud department conducts a full investigation, which typically takes 3-5 business days. You will receive a confirmation email shortly with your case reference number."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized nature of the charge, and successfully initiated a formal dispute with a provisional credit applied to the account.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "customer_name": "Javier Gonzalez",
+  "customer_age": 69,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Javier Gonzalez and I'm 69. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Javier. I can certainly help you look into that transaction. To get started, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88492011 and the last four of my SSN are 4922."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. Just to be sure, can you also confirm your current billing address on file?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 1242 Maple Street, Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Perfect, thanks. I see the charge here for $76.00 from 'Global Tech Services'. It doesn't look like a recurring payment. Since you don't recognize it, I'll need to open a formal dispute for you. Per our standard terms, we have to investigate unauthorized transactions before issuing a refund."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. Does that mean I have to wait a long time to get my money back?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand the concern. I've gone ahead and submitted the dispute case, number 99283-X. While the investigation usually takes 5-7 business days, I've flagged this as a potential unauthorized transaction, which is the standard procedure."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "The agent determined the transaction required a formal dispute investigation process rather than an immediate refund, moving the case to the billing dispute department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 69,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  }
+}

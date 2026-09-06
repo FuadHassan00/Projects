@@ -1,0 +1,67 @@
+{
+  "customer_name": "Scott Wagner",
+  "customer_age": 85,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Scott Wagner and I'm 85. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mr. Wagner, I would be happy to help you investigate that charge today. To ensure I'm looking at the correct account, could you please provide your account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8842-9910-2234 and I live in zip code 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. For security, I've just sent a one-time passcode to the phone number on file ending in -44. Could you please read that back to me?"
+    },
+    {
+      "role": "customer",
+      "message": "Let me see... it just came through. The code is 559281."
+    },
+    {
+      "role": "agent",
+      "message": "Verification successful, thank you. I see the $76 charge from 'Global Tech Services' dated two days ago. Since you don't recognize this, I have reviewed our transaction logs and confirmed this merchant is not one you have interacted with previously. Per our 'Unauthorized Transaction Protection Policy', I can initiate a dispute and issue a provisional refund immediately."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. I was worried it would be a long process. So the money will come back to me?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Mr. Wagner. I have successfully processed the refund of $76 to your account, which should reflect in your balance within 1-3 business days. I have also flagged your card for potential compromise and a new card with a different number will be mailed to your address within 5 business days to prevent further unauthorized activity."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, identified the unrecognized charge, processed a refund, and initiated a card replacement for security.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 85,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification, maintained a warm and respectful tone tailored to the customer, and efficiently resolved the issue by citing the Unauthorized Transaction Protection Policy. Furthermore, the agent took concrete action by processing the refund directly and issuing a replacement card."
+  }
+}

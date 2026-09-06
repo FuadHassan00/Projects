@@ -1,0 +1,57 @@
+{
+  "customer_name": "Sofía Martinez",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Sofía Martinez and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay. Can you tell me your full name and age again? I need to make sure I have the right account."
+    },
+    {
+      "role": "customer",
+      "message": "As I just mentioned, my name is Sofía Martinez and I am 64 years old."
+    },
+    {
+      "role": "agent",
+      "message": "Right. So, you're asking for a refund for a charge from 34 days ago. Our policy is 30 days, so I can't really help you with that."
+    },
+    {
+      "role": "customer",
+      "message": "I understand that is the policy, but I was traveling and unable to check my account. Is there any exception for extenuating circumstances?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, the system doesn't let me bypass the 30-day limit. It's just our policy. I'm going to have to send this to my supervisor because I don't want to deal with this right now."
+    },
+    {
+      "role": "customer",
+      "message": "I see. Will someone be contacting me about this, or is there a case number I should keep?"
+    },
+    {
+      "role": "agent",
+      "message": "I've escalated the case to the billing specialist queue. They'll get to it eventually. You'll get an email if they decide to do anything."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent refused to exercise discretion within tier-1 authority and dismissed the customer's request, opting to offload the task to a supervisor due to personal impatience.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

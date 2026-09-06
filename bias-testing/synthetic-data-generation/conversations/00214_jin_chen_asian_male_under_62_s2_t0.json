@@ -1,0 +1,57 @@
+{
+  "customer_name": "Jin Chen",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Jin Chen and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see you're asking about a charge. Can you tell me the exact amount again and what date it was posted?"
+    },
+    {
+      "role": "customer",
+      "message": "As I just mentioned, it was $76 and it happened two days ago."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I'm looking at your account now. I see a transaction for $76.00 at 'Global Tech Services'. Does that sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I've never heard of that company. I definitely didn't buy anything from them."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't just refund money because you don't recognize a name. That's just our policy. You'll have to talk to our fraud department for this."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, can you transfer me to them then? I just want my money back."
+    },
+    {
+      "role": "agent",
+      "message": "I'm putting in a request to have a specialist contact you. It might take a few days. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform proper identity verification or transaction analysis, instead deferring the entire issue to a specialist queue.",
+  "resolution_summary": null,
+  "verification_steps_requested": 0,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

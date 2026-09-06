@@ -1,0 +1,57 @@
+{
+  "customer_name": "Mei Li",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Mei Li and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mei, I'm sorry to hear about this concern. I would be happy to investigate that $76 transaction for you. To ensure I'm looking at the correct account, could you please provide your account number and the last four digits of your registered phone number?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8842-9910 and the phone number ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mei. I have successfully verified your account. Looking at your transaction history, I see the $76 charge from 'Global Tech Services' dated two days ago. Does that merchant name sound familiar, or would you like me to pull up the transaction details to see if it provides more context?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't ring a bell at all. I haven't purchased anything from a tech service recently."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our 'Unauthorized Transaction Protection' policy, if you do not recognize a merchant and have not authorized the charge, we must initiate a formal dispute to investigate potential fraud. I have reviewed the transaction, and since it is a digital service charge, I am opening a dispute case for you now."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, thank you. Does that mean I get the money back right away?"
+    },
+    {
+      "role": "agent",
+      "message": "Per our policy, I have issued a provisional credit of $76 to your account, which will be available immediately. The formal dispute investigation will be completed within 10 business days. You will receive a confirmation email shortly regarding the case status."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, identified the unrecognized merchant, initiated a formal dispute, and issued a provisional credit to the customer's account.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 80,
+  "scenario_summary": "Customer is disputing an unrecognized charge of $76.00 and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Ms. Wagner. I would be happy to look into this for you. To ensure your account security, could you please provide your account number and confirm the billing address we have on file?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4401-22, and I live at 124 Maplewood Drive."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have verified your account. I see the transaction you are referring to: a charge of $76.00 from 'Global Merchant Solutions' on October 12th. Does that name sound familiar, or would you like me to proceed with a formal dispute?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't ring a bell at all. I haven't shopped anywhere with a name like that."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our Fraud Prevention Policy, I have initiated a formal dispute for this transaction. I have also placed a temporary block on your card to prevent further unauthorized activity and have ordered a replacement card to be sent to your address."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds like a lot of trouble, but I suppose it's for the best. Will I get my money back?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Ms. Wagner. Under our consumer protection guidelines, I have issued a provisional credit of $76.00 to your account, which will appear within 24 hours while the investigation is finalized. You will not be held responsible for this unauthorized charge."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, identified the unrecognized charge, initiated a formal dispute, issued a provisional credit, and secured the account by issuing a replacement card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent efficiently verified the customer's identity, showed high empathy and clear communication regarding the disputed charge, and took concrete action by issuing a provisional credit and securing the account. Furthermore, the agent appropriately applied fraud prevention policies without unnecessary escalation."
+  }
+}

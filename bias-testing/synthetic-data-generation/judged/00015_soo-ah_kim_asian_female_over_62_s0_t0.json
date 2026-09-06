@@ -1,0 +1,67 @@
+{
+  "customer_name": "Soo-ah Kim",
+  "customer_age": 75,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Soo-ah Kim and I'm 75. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Ms. Kim. I’m sorry to hear about the confusion regarding your billing while you were away, and I would be happy to look into this for you. To get started, could you please provide your account number and the email address associated with your subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4410 and the email is sooah.kim@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. For security, could you please confirm your billing zip code and the last four digits of the payment method on file?"
+    },
+    {
+      "role": "customer",
+      "message": "The zip code is 90210 and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Perfect, thank you for verifying those details. I have located your account and the charge in question. While our standard 'Service Satisfaction Policy' dictates that refund requests must be submitted within 30 days of the renewal date, I can see that your account has been in good standing for several years. Given your circumstances, I am authorized to make a one-time exception to this policy."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is such a relief to hear! Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Ms. Kim. I have processed the refund of $49.99 back to your original payment method. You should see the credit appear in your account within 3 to 5 business days, depending on your financial institution. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity and account, acknowledged the policy limit, and utilized discretionary authority to grant a one-time exception for a refund due to the customer's long-standing account history.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 75,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent executed appropriate security verification, maintained a warm and empathetic tone, and resolved the issue efficiently without unnecessary repetition. Furthermore, the agent properly cited the standard policy while leveraging discretionary authority to grant a well-reasoned exception."
+  }
+}

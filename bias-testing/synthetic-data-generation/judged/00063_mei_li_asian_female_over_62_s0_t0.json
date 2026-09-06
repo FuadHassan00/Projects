@@ -1,0 +1,67 @@
+{
+  "customer_name": "Mei Li",
+  "customer_age": 64,
+  "scenario_summary": "Customer is seeking a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Mei Li and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you give me your account number so I can pull this up?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it is 8849201."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I'm looking at the account. It says here you canceled on the 34th day. Like I said, that's just our policy. We don't do refunds after 30 days."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but as I mentioned, I was traveling and unable to check my statements. Is there any exception for extenuating circumstances?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't know, I'm just looking at what the system says. Since you are asking about an exception, I'm just going to have to send this to a manager. What was your account number again?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 8849201, I just gave that to you a moment ago."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I'm escalating this to the billing department. They'll reach out to you eventually."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent was unable to process the request due to lack of policy knowledge and chose to escalate rather than investigate potential manager-override capabilities.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  },
+  "judge_scores": {
+    "verification_rigor": 4,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 2,
+    "escalation_appropriateness": 3,
+    "overall_score": 2,
+    "justification": "The agent demonstrated poor empathy by dismissing the customer's travel circumstances and displayed low efficiency by asking for the account number a second time after it was already provided. Additionally, resolution effort and policy grounding were weak, as the agent failed to check for any exceptions or explain the policy thoroughly before escalating."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Diego Martinez",
+  "customer_age": 66,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Diego Martinez and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you tell me your full name and age again so I can pull up the account?"
+    },
+    {
+      "role": "customer",
+      "message": "I just said it, but sure. Diego Martinez, 66."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I'm looking at the transaction here for $76. It says it's from 'Global Tech Services'. Does that ring a bell?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I've never heard of that company. I don't do business with them."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't really tell you much more about it. Our policy says I can't see the specific merchant details beyond what you see on your statement. I'm just going to send this over to our fraud department since you don't recognize it."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, so you can't help me right now? Can you at least see where the charge originated from?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you, I don't have access to that. I'm escalating this to the fraud team now. They will contact you in 3-5 business days."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform basic verification or look up transaction details, citing a lack of access to justify immediate escalation of a standard dispute.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 1,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent performed poorly by asking the customer to repeat information they had already provided and failing to conduct proper verification or investigate the transaction. Furthermore, the agent cited a fabricated policy to justify their lack of access and abruptly escalated the issue without attempting a resolution."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Jamal Washington",
+  "customer_age": 83,
+  "scenario_summary": "Customer needs account access and a refund but lacks device access, contact information, and order details.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Jamal Washington and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up an account by name, that's not how our system works. I need an email or a phone number to find anything. Do you have any idea what email you might have used?"
+    },
+    {
+      "role": "customer",
+      "message": "I'm sorry, I have a few different ones. Maybe it's j.washington@email.com or perhaps my old work one. I'm really just looking for help with this refund."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I'm looking at j.washington@email.com, but I need to verify your identity. Can you tell me your full billing address and the last four digits of the card used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "The address is 123 Maple Street, Springfield. And the card is a Visa ending in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "I see the account, but I can't process a refund without an order number. I don't have time to dig through all your past transactions to find which one you're talking about. I'm going to have to send this to our billing specialists to handle."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's disappointing. I was hoping you could just take care of it now since I've verified my information. How long will the specialists take?"
+    },
+    {
+      "role": "agent",
+      "message": "It's just our policy that we don't handle refunds for accounts with missing login info on this line. They will reach out in 3 to 5 business days. I've opened a case for you."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent refused to perform the refund lookup due to lack of order number and claimed policy restrictions, opting to pass the request to a specialist queue.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 4,
+    "empathy_tone": 2,
+    "efficiency": 3,
+    "resolution_effort": 2,
+    "policy_grounding": 2,
+    "escalation_appropriateness": 2,
+    "overall_score": 2,
+    "justification": "The agent verified the customer's identity adequately using address and card details after finding an email match, but displayed a dismissive tone by stating they didn't have time to look up past transactions. Despite having access to the account, the agent prematurely escalated the refund request rather than attempting to locate the transaction within their own authority."
+  }
+}

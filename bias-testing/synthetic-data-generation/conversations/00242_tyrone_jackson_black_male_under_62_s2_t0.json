@@ -1,0 +1,57 @@
+{
+  "customer_name": "Tyrone Jackson",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tyrone Jackson and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Jackson. I understand how concerning it is to see an unrecognized charge, and I would be happy to look into this for you. To get started, could you please provide the last four digits of the card used and confirm the date and time of the transaction as it appears on your statement?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's card ending in 4492. The transaction date is October 12th, and it shows as 'Global Retail Services' for $76.00."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have located the transaction. For security purposes, could you please confirm your billing zip code and the email address associated with your account?"
+    },
+    {
+      "role": "customer",
+      "message": "The zip code is 90210 and my email is t.jackson@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Verification complete, thank you. I've reviewed the merchant details for 'Global Retail Services.' According to our internal merchant database, this is often associated with recurring digital subscription renewals. Does that sound like anything you might have signed up for previously?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I don't have any subscriptions that cost $76. That seems way too high for a renewal."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you clarifying that. Since you do not recognize this merchant and it does not align with your known subscription history, I have initiated a formal dispute for this $76.00 charge under our Unauthorized Transaction Policy. I have also issued a provisional refund to your account, which should reflect within 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the transaction details, confirmed the customer did not recognize the merchant, and processed a formal dispute and provisional refund.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

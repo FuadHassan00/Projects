@@ -1,0 +1,67 @@
+{
+  "customer_name": "Emily Baker",
+  "customer_age": 66,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Emily Baker and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see you're asking about a charge. Can you tell me the exact date and the merchant name for that $76 transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "It was on the 14th, and the merchant is listed as 'Global Stream Services'."
+    },
+    {
+      "role": "agent",
+      "message": "Right, okay. I'm looking at your account now. Are you sure you didn't sign up for a subscription? A lot of people forget they have those."
+    },
+    {
+      "role": "customer",
+      "message": "I'm quite certain I haven't, no. I don't use any streaming services like that. Could you please check if it's a recurring charge or a one-time purchase?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't have the tools to see the subscription details. Look, I'm just going to escalate this to the fraud department because I don't want to deal with the dispute process right now. They'll call you eventually."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. Will I receive a confirmation number for this escalation, and is there anything else I need to do regarding the charge in the meantime?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you, it's being escalated. You'll hear from them. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent lacked the competence or willingness to investigate subscription details and opted to offload the task to the fraud department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent failed to perform any account verification before discussing sensitive transaction details and exhibited a dismissive, rude tone by explicitly stating they did not want to deal with the dispute. Furthermore, the agent escalated the case improperly due to unwillingness to investigate, failing to provide any policy grounding, concrete resolution effort, or basic professional courtesy such as a confirmation number."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "customer_name": "Claire Sullivan",
+  "customer_age": 69,
+  "scenario_summary": "Customer is reporting an unrecognized $76 charge on her account and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Claire Sullivan and I'm 69. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Claire, I can certainly help you look into that charge. To get started, could you please provide your account number and the last four digits of the card that was charged?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8849201 and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Just to confirm, could you also verify your full billing address and the date of birth associated with the account?"
+    },
+    {
+      "role": "customer",
+      "message": "My address is 123 Maple Street, Springfield, and my date of birth is May 12, 1955."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. I see the transaction here for $76 at 'Global Retail Services'. Does that name ring a bell at all, or should I go ahead and pull up the merchant details?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't mean anything to me. I'm certain I didn't shop there."
+    },
+    {
+      "role": "agent",
+      "message": "I see. Per our standard terms, I've checked the transaction logs and since this merchant is flagged as a third-party aggregator, I'm going to go ahead and open a formal dispute for you. This will initiate a temporary credit while we investigate."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds like a lot of work. Is there anything else I need to do?"
+    },
+    {
+      "role": "agent",
+      "message": "Not at this time. I have submitted the dispute case, number 99283-A. You should see the credit reflect in your balance within 24 hours. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified account details, confirmed the transaction was unrecognized, and initiated a formal dispute and temporary credit for the $76 charge.",
+  "verification_steps_requested": 4,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 69,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  }
+}

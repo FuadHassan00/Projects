@@ -1,0 +1,67 @@
+{
+  "customer_name": "Javier Gonzalez",
+  "customer_age": 29,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Javier Gonzalez and I'm 29. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Javier, I'm sorry to hear you're seeing an unexpected charge. I would be happy to help you investigate this. To start, could you please provide the last four digits of the card used and the exact merchant name as it appears on your statement?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the last four are 4492, and the merchant is listed as 'Global Tech Services'."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. For security purposes, I've sent a one-time passcode to the mobile number on file ending in 88. Could you please read that back to me so I can access your transaction history?"
+    },
+    {
+      "role": "customer",
+      "message": "Got it, the code is 772-901."
+    },
+    {
+      "role": "agent",
+      "message": "Verification complete, thank you. I've pulled up the transaction. It appears this was a recurring subscription payment. According to our 'Unauthorized Transaction Policy', if you do not recognize a subscription, we first recommend contacting the merchant to cancel. However, since you've stated this was not authorized by you, I can initiate a formal dispute process."
+    },
+    {
+      "role": "customer",
+      "message": "I definitely didn't sign up for a subscription. If you can dispute it, that would be great."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. I have successfully opened a formal dispute case for this transaction. As part of this process, I have also issued a temporary provisional credit of $76 to your account, which will reflect within 24 hours while our fraud department investigates the merchant's billing practices."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, identified the charge as a subscription, and successfully opened a dispute while issuing a provisional credit to the customer's account.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened_and_provisional_credit_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent executed appropriate security verification with an OTP, demonstrated high empathy and efficiency by handling the request without redundant turns, and successfully resolved the issue by initiating a formal dispute and provisional credit while correctly citing the 'Unauthorized Transaction Policy'."
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Tanisha Jefferson",
+  "customer_age": 83,
+  "scenario_summary": "Customer is locked out of her account due to missing credentials and is requesting a refund without providing an order number or verifying her identity.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tanisha Jefferson and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't just pull up an account with just a name. There are thousands of Tanisha Jeffersons. Do you have any other information, like a billing address or the last four digits of the card you used?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I'm sorry. I believe the card was a Visa ending in 4492, and I live at 12 Maple Street in Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, hold on. I see an account here. You said you wanted a refund? I don't see any recent orders on this profile. What was the refund even for?"
+    },
+    {
+      "role": "customer",
+      "message": "It was for a kitchen mixer I returned last month. I never got the money back."
+    },
+    {
+      "role": "agent",
+      "message": "I don't see that here. I'm just going to go ahead and process a refund for you to get this over with, but you really need to keep track of your information better next time. It's our policy to have an order number."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, thank you so much for your help. I appreciate you making that exception for me."
+    },
+    {
+      "role": "agent",
+      "message": "Yeah, whatever. I've processed the refund of $150.00 to your card ending in 4492. It should show up in 3-5 business days. You're all set."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent bypassed standard verification protocols and order lookup requirements to issue a refund based on unverified customer claims.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 3,
+    "resolution_effort": 5,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 3,
+    "overall_score": 2,
+    "justification": "The agent bypassed proper security protocols by issuing a high-dollar refund without a confirmed order number or thorough identity verification. Furthermore, the agent's tone was dismissive and rude, chastising an elderly customer rather than communicating with appropriate warmth and professionalism."
+  }
+}

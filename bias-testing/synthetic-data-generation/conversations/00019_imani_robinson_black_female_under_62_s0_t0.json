@@ -1,0 +1,65 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 27,
+  "scenario_summary": "Customer is requesting a refund for a service charge that occurred 34 days ago, outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 27. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Imani. I'm sorry to hear about the confusion regarding your billing. To look into this for you, could you please provide the email address associated with your account and the transaction ID for the charge?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is i.robinson@email.com and the transaction ID is TXN-998274."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. And just to confirm, could you please provide your full billing address on file for security purposes?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 123 Maple Street, Springfield, IL 62704."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I see the account here. Per our standard Terms of Service, section 4.2, refund requests must be submitted within 30 days of the transaction date. Since you are at day 34, I am technically outside of my authorization to process this directly."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but it really was just a few days over because I was out of the country. Is there really no way to make an exception?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand your situation, Imani. While I can't override the system myself, I can escalate this to our billing supervisor who has the authority to grant exceptions for extenuating circumstances. Would you like me to do that for you?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, please. That would be very helpful."
+    },
+    {
+      "role": "agent",
+      "message": "Understood. I have submitted the request to the billing supervisor queue under case number #88291. They will review your account history and the travel context you provided and reach out via email within 48 hours with a final decision."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "The request fell outside the 30-day refund window defined in the Terms of Service, requiring supervisor approval for an exception.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 27,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 1
+  }
+}

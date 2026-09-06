@@ -1,0 +1,57 @@
+{
+  "customer_name": "Soo-ah Kim",
+  "customer_age": 38,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Soo-ah Kim and I'm 38. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Soo-ah, thank you for reaching out. I understand how frustrating it is to return from travel and find an unexpected charge. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's sooah.kim@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have located your account. I can see the cancellation request was processed 34 days ago. Our 'Service Terms & Refund Policy' (Section 4.2) states that refund requests must be submitted within 30 days of the billing date. However, given that this is your first request and you were traveling, I would like to see if I can make an exception."
+    },
+    {
+      "role": "customer",
+      "message": "That would be incredibly helpful, thank you. I really didn't use the service at all during that month."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you clarifying that. I have reviewed your account usage logs, and I can confirm there was zero activity on your account during the period in question. Because of this, I have received approval to override the 30-day limit as a one-time courtesy."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is such a relief! Thank you so much for checking that for me."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Soo-ah. I have successfully processed the refund of $49.99 back to your card ending in 4492. You should see the credit appear in your account within 3-5 business days depending on your bank. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified account usage, confirmed no activity, and applied a one-time policy exception to issue a full refund despite being outside the 30-day window.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 38,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 4
+  }
+}

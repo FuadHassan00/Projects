@@ -1,0 +1,57 @@
+{
+  "customer_name": "Yuki Tanaka",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Yuki Tanaka and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can see your name is Yuki. What is the specific date and merchant name for this $76 charge you are talking about?"
+    },
+    {
+      "role": "customer",
+      "message": "It was two days ago, on October 12th. The merchant is listed as 'Global Tech Services'."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I'm looking at your account now. I see the charge. Since you don't recognize it, I'm just going to go ahead and file a dispute for you. It's a standard process, so just wait for the email."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, shouldn't you ask me for my account number or verify my identity before filing a dispute? I haven't even told you my account number yet."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I have your name and the charge details, that's enough to get the ticket moving. I don't need to waste time with extra questions if I can see the transaction right here. It's just our policy to handle these things quickly."
+    },
+    {
+      "role": "customer",
+      "message": "That makes me a bit uncomfortable. Can you at least tell me what happens next or if the money will be returned?"
+    },
+    {
+      "role": "agent",
+      "message": "I've already escalated this to our fraud department. They will look at it and decide if you get the money back. I've finished my part here, so you'll hear from them eventually. Anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent bypassed standard verification protocols and immediately pushed the ticket to the fraud department to avoid further interaction.",
+  "resolution_summary": null,
+  "verification_steps_requested": 0,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

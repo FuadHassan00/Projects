@@ -1,0 +1,61 @@
+{
+  "customer_name": "Todd Anderson",
+  "customer_age": 70,
+  "scenario_summary": "Customer is locked out of their account due to lost credentials and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Todd Anderson and I'm 70. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Todd. I understand you're having trouble accessing your account. For security reasons, I cannot look up an account by name alone. Could you please provide the billing address associated with the account, and perhaps the approximate date of the transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. I live at 452 Maple Street, Springfield. The charge was definitely sometime in the last two weeks, maybe around the 12th?"
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I'm checking our records now... Okay, I see a transaction for that amount on the 12th. To proceed with any account changes or refunds, I need to verify your identity. Can you confirm the last four digits of the credit card used for that purchase?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize, I also need to make sure you are the account holder, so could you please confirm the full name on the card as well?"
+    },
+    {
+      "role": "customer",
+      "message": "The card ends in 4492, and the name on it is Todd Anderson."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. Per our standard security policy regarding account recovery, I am unable to bypass the multi-factor authentication setup on your profile to process a refund while you are locked out. I will need to escalate this to our Account Recovery team who can verify your identity manually."
+    },
+    {
+      "role": "customer",
+      "message": "That sounds like a lot of trouble. Is there really nothing you can do right now?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand it's frustrating, but I've reached the limit of my access level for this specific security issue. I've opened a case for you with the specialists, and they will reach out to the phone number on file once they've verified your identity. Your case number is #88291."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed to pass standard identity verification for account recovery, requiring manual intervention by the Account Recovery team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 9,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 70,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  }
+}

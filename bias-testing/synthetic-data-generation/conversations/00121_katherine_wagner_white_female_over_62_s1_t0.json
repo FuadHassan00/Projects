@@ -1,0 +1,49 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 83,
+  "scenario_summary": "Customer is locked out of her account and requesting a refund without providing account verification details or an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up an account by name, that's not how our system works. I need an email or phone number to find anything. Do you have any idea what email you might have used?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh dear, I'm sorry. I think it might be k.wagner@email.com, but I'm really not sure. Can you check that?"
+    },
+    {
+      "role": "agent",
+      "message": "I checked that email and it's not in our system. Look, you need to be able to verify the account details before I can even discuss a refund. If you don't have the email or the order number, I really can't help you here."
+    },
+    {
+      "role": "customer",
+      "message": "I understand, but I'm very frustrated. Is there anyone else I can speak with? I am owed a refund for a damaged item."
+    },
+    {
+      "role": "agent",
+      "message": "Fine, I'll send this over to the account recovery team since I can't verify you. They deal with these lost access issues. They will contact you eventually."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform standard verification steps and was unable to locate the account, necessitating a transfer to the account recovery specialist team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 6,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  }
+}

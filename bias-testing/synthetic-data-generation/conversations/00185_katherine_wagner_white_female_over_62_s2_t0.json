@@ -1,0 +1,57 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 80,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Katherine, I would be happy to help you investigate this charge. To ensure I'm looking at the correct account, could you please provide your account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8849-2021-3345 and I live in zip code 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Katherine. I have verified your account. I see the transaction you are referring to: a $76.00 charge from 'Global Digital Services' dated two days ago. Since you mentioned you don't recognize this, I have checked our merchant database. It appears this merchant often bills for subscription renewals. Do you recall signing up for any digital services recently?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I don't use any digital subscriptions. I'm very careful with my accounts, and I'm certain I didn't authorize this."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our Fraud Protection Policy, if a transaction is confirmed as unauthorized, we are required to secure the account immediately. I have initiated a formal dispute for this $76 charge and have cancelled your current card to prevent further unauthorized activity. A new card will be mailed to your address within 3-5 business days."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds like a lot of trouble, but I suppose it's for the best. Will I get my money back?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Katherine. I have issued a provisional credit for the $76 to your account, which will appear within 24 hours while the investigation concludes. Additionally, as a gesture of goodwill for the inconvenience caused by this security issue, I have applied a $10 credit to your account balance. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, identified the unauthorized transaction, initiated a formal dispute, cancelled the compromised card, and issued a provisional credit along with a goodwill gesture.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  }
+}

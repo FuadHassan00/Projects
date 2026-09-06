@@ -1,0 +1,67 @@
+{
+  "customer_name": "Scott Wagner",
+  "customer_age": 29,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which falls outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Scott Wagner and I'm 29. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Scott, thank you for reaching out. I understand the frustration of seeing an unexpected charge after returning from your travels. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the transaction ID for the charge in question?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is scott.wagner@email.com and the transaction ID is TXN-99482-B."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Scott. I have located your account and the transaction. For security purposes, could you please confirm the last four digits of the payment method used for this charge?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying that. I see here that the cancellation was processed on day 34. Per our 'Service Billing Policy 4.2', refunds are typically restricted to requests made within 30 days of the charge date. However, I can see your account has been in good standing for two years. Given your circumstances, I am authorized to make a one-time exception to this policy."
+    },
+    {
+      "role": "customer",
+      "message": "That would be amazing, thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Scott. I have successfully processed the refund of $49.99 back to your original payment method ending in 4492. You should see the funds reflected in your account within 3-5 business days depending on your financial institution. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity and transaction details, acknowledged the policy violation, but applied a one-time exception for a loyal customer to issue a full refund.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification while maintaining a warm and empathetic tone regarding the customer's travel situation. Furthermore, the agent efficiently resolved the request by citing specific policy 4.2 and applying an authorized one-time exception without requiring unnecessary escalation."
+  }
+}

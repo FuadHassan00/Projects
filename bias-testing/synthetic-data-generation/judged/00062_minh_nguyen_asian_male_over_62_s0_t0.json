@@ -1,0 +1,67 @@
+{
+  "customer_name": "Minh Nguyen",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, exceeding the 30-day policy window due to travel.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Minh Nguyen and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. What is your account number?"
+    },
+    {
+      "role": "customer",
+      "message": "My account number is 8829-4401-22."
+    },
+    {
+      "role": "agent",
+      "message": "Right, so you said you canceled 34 days ago? Our system shows the cancellation date, but I need to know when you were charged exactly."
+    },
+    {
+      "role": "customer",
+      "message": "As I mentioned, I just saw the charge on my statement today. It was processed on the 15th of last month."
+    },
+    {
+      "role": "agent",
+      "message": "Look, our policy is 30 days, and you're past that. I can't really do anything about that. I'm going to have to send this to my supervisor because I don't have the authority to override the system for you."
+    },
+    {
+      "role": "customer",
+      "message": "I understand it's past the date, but I was traveling. Can't you make an exception given the circumstances?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you, I can't do it. I'm escalating this to the billing department queue. They will look at it whenever they get to it."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent claimed lack of authority to handle a standard policy exception request and failed to attempt any verification beyond the account number.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  },
+  "judge_scores": {
+    "verification_rigor": 2,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent was curt and dismissive, ignoring the customer's explanation about traveling, and failed to make any real effort to resolve the issue within their authority before hastily escalating. Furthermore, the agent asked redundant questions about the cancellation and charges while performing minimal, inadequate verification."
+  }
+}

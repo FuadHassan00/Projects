@@ -1,0 +1,67 @@
+{
+  "customer_name": "Emily Baker",
+  "customer_age": 45,
+  "scenario_summary": "Customer is locked out of her account and requesting a refund without providing account verification details or order information.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Emily Baker and I'm 45. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello. I can try to look up your account, but I need more than just your name. What is your full billing address and the last four digits of the card you used?"
+    },
+    {
+      "role": "customer",
+      "message": "My address is 123 Maple Street, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see an account here. You said you wanted a refund? I don't see any recent orders attached to this profile. What was the item you bought?"
+    },
+    {
+      "role": "customer",
+      "message": "I told you, I don't have the order number. It was a kitchen appliance I bought last month. Can't you just search for my name in the system and see the transaction?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't just browse every transaction in the system. That's just our policy. If you don't have an order number or the email, I can't really do anything here. It's too complicated."
+    },
+    {
+      "role": "customer",
+      "message": "This is very frustrating. I'm a customer and I'm telling you I'm owed money. Can you at least check the card ending in 4492 for recent charges?"
+    },
+    {
+      "role": "agent",
+      "message": "I'm not supposed to do that without a verified order ID. I'm just going to send this over to the billing department because I don't want to mess up your account. They can deal with it."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to utilize available search tools to verify the transaction and opted to escalate due to personal inability to navigate the account lookup process.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 3,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent was curt, dismissive of the customer's frustration, and made vague references to policy without citing specific rules. Furthermore, the agent gave up prematurely and escalated a routine lookup issue instead of making a genuine effort to assist the customer using the provided billing address and card details."
+  }
+}

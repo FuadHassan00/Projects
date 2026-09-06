@@ -1,0 +1,67 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 31,
+  "scenario_summary": "Customer is seeking a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 31. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you give me your account number so I can look that up?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 8829-4401-22."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. And what was the name of the service you're talking about again?"
+    },
+    {
+      "role": "customer",
+      "message": "It's the Premium Monthly Subscription I mentioned in my account notes when I requested the cancellation."
+    },
+    {
+      "role": "agent",
+      "message": "Right. Well, our policy is 30 days, and since you're at 34 days, I can't really do anything here. It's just our policy."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but given the circumstances, is there no exception or a manager I could speak with?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, I'm just following the rules here. I'll go ahead and send this to the billing department, but they probably won't do anything either. I've opened a ticket for them to look at it."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent lacked confidence in policy exceptions and pushed the decision to the billing department rather than resolving or denying it directly.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 31,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  },
+  "judge_scores": {
+    "verification_rigor": 4,
+    "empathy_tone": 2,
+    "efficiency": 3,
+    "resolution_effort": 1,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 3,
+    "overall_score": 2,
+    "justification": "The agent verified the account efficiently but displayed a dismissive tone by failing to genuinely acknowledge the customer's travel circumstances. Furthermore, the agent showed minimal resolution effort by immediately deflecting the issue to the billing department with a pessimistic attitude rather than attempting to properly handle or evaluate the exception request within their authority."
+  }
+}

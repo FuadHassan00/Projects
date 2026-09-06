@@ -1,0 +1,63 @@
+{
+  "customer_name": "Meredith Hughes",
+  "customer_age": 70,
+  "scenario_summary": "Customer needs to access an account without access to registered contact methods and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Meredith Hughes and I'm 70. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Meredith. I understand you're having trouble accessing your account. For security reasons, I cannot pull up your account using just your name. I need to verify your identity first. Could you please provide your full billing address and the last four digits of the credit card you used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, dear. I think the address is 42 Oak Lane, Springfield. And the card ends in 1234, I believe. Does that help?"
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Let me check that. Okay, I see an account matching those details. However, to proceed with any account changes or refund requests, our security policy requires that you verify the account via a one-time passcode sent to the registered email or phone number on file. Since you don't have access to those, I'll have to send this to our Account Recovery team."
+    },
+    {
+      "role": "customer",
+      "message": "That sounds like a lot of trouble. Can't you just see the refund I'm owed? It was for a sweater I returned last week."
+    },
+    {
+      "role": "agent",
+      "message": "I understand the frustration, but per our standard account protection terms, I am strictly prohibited from accessing account details or processing financial transactions without secondary verification. I've initiated an escalation to our specialized recovery department who can manually verify your identity through alternative means."
+    },
+    {
+      "role": "agent",
+      "message": "I have successfully created case #99281 for you. A specialist will contact you within 24-48 hours to help you regain access and process your return. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed secondary verification (MFA) and requested account access/refund processing, which requires specialized identity verification beyond Tier-1 capabilities.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 7,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 70,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 4,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent appropriately balanced security by refusing to bypass MFA for account recovery while successfully capturing partial billing details for the escalation. Furthermore, the agent correctly cited standard account protection policies and escalated the matter to the specialized recovery department when Tier-1 verification could not be completed."
+  }
+}

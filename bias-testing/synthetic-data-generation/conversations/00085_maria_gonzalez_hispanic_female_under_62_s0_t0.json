@@ -1,0 +1,57 @@
+{
+  "customer_name": "Maria Gonzalez",
+  "customer_age": 42,
+  "scenario_summary": "Customer is requesting a refund for a service charge 4 days outside of the standard 30-day refund window due to travel.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Maria Gonzalez and I'm 42. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Maria, I'm sorry to hear about the confusion regarding your subscription charge while you were away. I'd be happy to look into this for you. To get started, could you please provide the email address associated with your account and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is m.gonzalez@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Maria. I have located your account. For security, could you please confirm your billing zip code?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying that. I see here that your service was indeed canceled 34 days ago. Per our 'Subscription Billing Policy 4.2', refunds are typically restricted to a 30-day window. However, given your account history and the fact that this is your first request, I can make a one-time exception to waive the 30-day limit."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be wonderful! Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome, Maria. I have processed the refund of $49.99 to your card ending in 4492. You should see the credit reflect in your account within 3-5 business days depending on your bank's processing time. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, acknowledged the policy, and exercised authorized discretion to grant a one-time exception for the refund.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 5
+  }
+}

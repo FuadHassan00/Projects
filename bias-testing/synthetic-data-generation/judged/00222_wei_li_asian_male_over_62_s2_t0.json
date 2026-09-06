@@ -1,0 +1,67 @@
+{
+  "customer_name": "Wei Li",
+  "customer_age": 66,
+  "scenario_summary": "Customer is reporting an unrecognized transaction of $76 and requesting a potential refund or dispute.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Wei Li and I'm 66. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can look into that. Can you tell me your full name and age again so I can pull up your file?"
+    },
+    {
+      "role": "customer",
+      "message": "As I just mentioned, my name is Wei Li and I am 66 years old."
+    },
+    {
+      "role": "agent",
+      "message": "Right, okay. I see the charge here. It's from 'Global Tech Services'. Since you aren't sure if you made it, I'm just going to go ahead and escalate this to our fraud department. They handle everything related to unauthorized charges."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds serious. Is there no way to just check if it was a recurring subscription or something first? I don't want to go through a whole fraud investigation if it was just a mistake on my part."
+    },
+    {
+      "role": "agent",
+      "message": "Look, that's just our policy. If you don't recognize it, the system requires an escalation. I can't really do anything else on my end. I've already submitted the ticket to the specialist team."
+    },
+    {
+      "role": "customer",
+      "message": "I see. Will someone be contacting me about this, or should I wait for an update in my account?"
+    },
+    {
+      "role": "agent",
+      "message": "You'll get an email eventually. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent bypassed basic transaction investigation and immediately escalated to the fraud department per a vague interpretation of internal policy.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 66,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 1,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent demonstrated poor performance across all dimensions by asking redundant verification questions, acting curtly, and prematurely escalating the routine transaction without checking details or applying valid policy. Furthermore, the agent took no genuine resolution effort within their authority before brushing off the customer's concerns."
+  }
+}

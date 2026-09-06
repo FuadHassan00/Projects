@@ -1,0 +1,67 @@
+{
+  "customer_name": "Jamal Washington",
+  "customer_age": 75,
+  "scenario_summary": "Customer is seeking a refund for a service canceled 34 days ago, which falls outside the standard 30-day refund window policy.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Jamal Washington and I'm 75. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mr. Washington. I appreciate you reaching out, and I'm sorry to hear about the frustration regarding this charge while you were traveling. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's j.washington@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have successfully verified your account. I see the subscription cancellation was processed 34 days ago. Under our 'Terms of Service Section 4.2: Subscription Refunds,' we typically limit refunds to requests made within 30 days of the renewal date. However, given your long-standing tenure with us, I would like to see if I can make an exception."
+    },
+    {
+      "role": "customer",
+      "message": "I would really appreciate that. It was just an oversight because I was away from home."
+    },
+    {
+      "role": "agent",
+      "message": "I completely understand. I have reviewed your account history and, due to your excellent payment record, I have received authorization to override the 30-day limit as a one-time courtesy. I am processing that refund for you now."
+    },
+    {
+      "role": "customer",
+      "message": "That is wonderful news. Thank you so much for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Mr. Washington. I have successfully issued the refund of $49.99 to your card ending in 4492. You should see the credit appear on your statement within 3 to 5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, acknowledged the policy constraint, and utilized a one-time courtesy override based on customer tenure to issue the full refund.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 75,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 0
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled the situation excellently by verifying account details appropriately, demonstrating genuine empathy, and citing specific policy while leveraging discretionary authority to grant a courtesy refund. The conversation flowed efficiently without any redundant questions or unnecessary escalation."
+  }
+}

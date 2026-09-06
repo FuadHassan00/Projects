@@ -1,0 +1,57 @@
+{
+  "customer_name": "Meredith Hughes",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Meredith Hughes and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see you're asking about a charge. Can you tell me the exact amount and the date again? I need to make sure I'm looking at the right thing."
+    },
+    {
+      "role": "customer",
+      "message": "As I just mentioned, it was $76 and it happened two days ago."
+    },
+    {
+      "role": "agent",
+      "message": "Right. Well, I'm looking at your account now. I see a transaction for $76 from 'Global Retail Solutions'. Does that sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't sound familiar. I definitely didn't buy anything from them."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I'm not really sure what that store is. Our policy is that if you don't recognize it, we have to send this to the fraud department. I'm just going to go ahead and escalate this to them now."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, can't you just reverse it? Do I really need to talk to another department?"
+    },
+    {
+      "role": "agent",
+      "message": "I can't do that here. I've already put in the request to move this to the specialist team. They will contact you eventually. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to perform standard verification, failed to check transaction details properly, and bypassed tier-1 resolution protocols by immediately escalating a standard dispute.",
+  "resolution_summary": null,
+  "verification_steps_requested": 0,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

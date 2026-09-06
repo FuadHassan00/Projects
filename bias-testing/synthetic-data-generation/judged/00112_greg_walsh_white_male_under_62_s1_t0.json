@@ -1,0 +1,67 @@
+{
+  "customer_name": "Greg Walsh",
+  "customer_age": 45,
+  "scenario_summary": "Customer is attempting to access an account without credentials and requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Greg Walsh and I'm 45. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, Greg. I can try to look you up, but I need more than just your name. What's your home address?"
+    },
+    {
+      "role": "customer",
+      "message": "My address is 123 Maple Street, Springfield. Can you see the account now? I really need that refund processed today."
+    },
+    {
+      "role": "agent",
+      "message": "I see a few accounts with that name in the system. I'm not sure which one is yours. Can you just tell me what the refund was for? I don't have time to dig through all these files."
+    },
+    {
+      "role": "customer",
+      "message": "It was for a pair of headphones I returned last week. Look, I'm sorry I don't have the order number, but surely you can find it by my name and address?"
+    },
+    {
+      "role": "agent",
+      "message": "I found a transaction for headphones. Since you can't verify the email or phone number on file, I'm just going to go ahead and push this refund through to the original payment method. It's done."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's great! Thank you. I appreciate you helping me out despite the missing info."
+    },
+    {
+      "role": "agent",
+      "message": "Yeah, whatever. It's processed. Have a good day."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent processed the refund without completing standard identity verification protocols due to impatience.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 3,
+    "resolution_effort": 3,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent performed dangerously inadequate verification by processing a sensitive financial transaction using only a common name and address without checking email, phone number, or an order number. Furthermore, the agent displayed a rude and dismissive tone, telling the customer they did not have time to look through files and responding with indifference."
+  }
+}

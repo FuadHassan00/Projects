@@ -1,0 +1,57 @@
+{
+  "customer_name": "Brad Miller",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Brad Miller and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can look at that. Can you tell me your full name and age again so I can pull up your file?"
+    },
+    {
+      "role": "customer",
+      "message": "I just said that, it's Brad Miller and I'm 30."
+    },
+    {
+      "role": "agent",
+      "message": "Right, okay. I see a charge for $76 from 'Global Tech Services'. Do you recognize that?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I definitely don't have any subscriptions or purchases with a company by that name."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I'm not really sure what this is. I'm just going to go ahead and escalate this to our fraud department since I can't see the details of the transaction on my end."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, can't you just reverse it? I really don't want to wait for a whole fraud investigation if it's just a simple error."
+    },
+    {
+      "role": "agent",
+      "message": "I don't have the authority to just refund it. That's just our policy. I've already sent the ticket to the specialists, so you'll hear from them in 3-5 business days."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent claimed lack of authority to resolve the dispute and inability to view transaction details, defaulting to fraud department escalation.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

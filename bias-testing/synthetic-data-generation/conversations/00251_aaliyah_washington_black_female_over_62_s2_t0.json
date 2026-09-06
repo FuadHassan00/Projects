@@ -1,0 +1,57 @@
+{
+  "customer_name": "Aaliyah Washington",
+  "customer_age": 85,
+  "scenario_summary": "A customer is disputing an unrecognized $76 charge on her account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Aaliyah Washington and I'm 85. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Ms. Washington, I would be happy to look into this for you. I understand how concerning an unexpected charge can be. To get started, could you please provide your account number and the last four digits of your Social Security number for security verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4401-22, and the last four of my SSN are 9982."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying those details, Ms. Washington. I have successfully accessed your account. I see the $76 charge from 'Global Tech Services' dated two days ago. Does that merchant name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I've never heard of Global Tech Services. I don't own any tech gadgets besides my telephone."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you clarifying that. Based on our 'Unauthorized Transaction Policy,' since you have confirmed this merchant is unknown to you, I have initiated a formal dispute for this $76 charge. This will immediately freeze any further pending transactions from this merchant."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Will I get my money back?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, Ms. Washington. I have processed a provisional credit of $76 to your account, which will appear within one business day. As a gesture of goodwill for the stress this caused, I have also applied a $10 credit to your account. You will receive a confirmation email shortly with your dispute case number: #882910."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, identified the unauthorized merchant, initiated a formal dispute, and issued a provisional credit along with a goodwill gesture.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 85,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

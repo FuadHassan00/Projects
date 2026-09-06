@@ -1,0 +1,57 @@
+{
+  "customer_name": "Brad Miller",
+  "customer_age": 80,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Brad Miller and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Miller. I would be happy to help you investigate that transaction. For security purposes, could you please verify your full account number and the billing zip code associated with your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the account number is 8829-4410-2293 and the zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mr. Miller. I have successfully verified your account. I see the transaction for $76.00 on October 12th at 'Global Tech Services'. Does that merchant name sound familiar at all, perhaps related to a software subscription or service renewal?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell at all. I don't use any services with a name like that."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our Fraud Protection Policy, if a transaction is deemed unauthorized, we initiate a formal dispute to recover those funds. I have checked the transaction details, and since this merchant is not on your recurring payment list, I have initiated a formal dispute case, ID #99283-X, and issued a provisional credit of $76.00 to your account effective immediately."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is a relief. Thank you for taking care of that so quickly. Is there anything else I need to do?"
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Mr. Miller. No further action is required from your side at this time. Our fraud department will investigate the merchant and contact you via mail if they require any additional information. I have also placed a temporary block on your card to prevent any further unauthorized charges; a new card will arrive at your address within 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account, identified the unrecognized merchant, initiated a formal dispute, issued a provisional credit, and proactively replaced the compromised card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  }
+}

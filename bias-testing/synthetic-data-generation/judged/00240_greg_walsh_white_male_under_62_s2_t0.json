@@ -1,0 +1,75 @@
+{
+  "customer_name": "Greg Walsh",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Greg Walsh and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Greg, I’m sorry to hear about the confusion regarding this charge. I would be happy to help you investigate this. To get started, could you please provide the last four digits of your account number and confirm the billing address we have on file?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the last four are 4492 and the address is 123 Maple Street, Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for confirming that, Greg. I have located the transaction for $76.00 dated two days ago from 'Global Tech Services'. Does that merchant name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell at all. I haven't done any business with a company by that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our Unauthorized Transaction Policy, if a merchant is unrecognized, we must initiate a formal dispute to protect your account. I have pulled up the transaction details, and since this was a card-not-present transaction, I am proceeding with a chargeback request."
+    },
+    {
+      "role": "agent",
+      "message": "I have successfully opened the dispute case (Reference #99283-A). As part of this process, the $76.00 has been provisionally credited back to your account while the investigation takes place. You should see those funds reflected in your balance within 24 hours."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Thank you for the quick help. Do I need to do anything else?"
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome. No further action is required from your side at this time. Our fraud department will contact you via email if they require any additional documentation, but otherwise, the case is in progress. Is there anything else I can assist you with today?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that covers it. Thanks again."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, identified the unrecognized merchant, initiated a formal dispute, and issued a provisional credit to the customer's account.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate verification, maintained a warm and empathetic tone, and resolved the issue efficiently without wasted steps. Furthermore, the agent cited the Unauthorized Transaction Policy and took immediate concrete action by issuing a provisional credit and opening a formal dispute case."
+  }
+}

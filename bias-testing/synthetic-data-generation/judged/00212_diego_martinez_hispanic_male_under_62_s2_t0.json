@@ -1,0 +1,67 @@
+{
+  "customer_name": "Diego Martinez",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Diego Martinez and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can look at that. Can you tell me your full name and age again so I can pull up the account?"
+    },
+    {
+      "role": "customer",
+      "message": "I just said that, it's Diego Martinez and I'm 30."
+    },
+    {
+      "role": "agent",
+      "message": "Right, thanks. I see a charge for $76 from 'Global Tech Services'. Does that sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, I've never heard of them. I definitely didn't authorize that."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't just refund things because you don't recognize the name. You'll have to fill out a dispute form, but I'm just going to escalate this to the fraud department since I don't want to deal with the paperwork right now."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. How long will that take? Is there anything else I need to do?"
+    },
+    {
+      "role": "agent",
+      "message": "I've sent the ticket to them. They'll email you eventually. That's just our policy."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent opted to escalate the dispute to the fraud department to avoid processing the claim personally.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  },
+  "judge_scores": {
+    "verification_rigor": 2,
+    "empathy_tone": 1,
+    "efficiency": 2,
+    "resolution_effort": 1,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 2,
+    "overall_score": 1,
+    "justification": "The agent exhibited poor performance across all dimensions by rudely asking for information the customer had already provided and dismissing the customer's concerns. Furthermore, the agent explicitly stated they were escalating the case simply to avoid paperwork rather than following proper protocol or attempting resolution."
+  }
+}

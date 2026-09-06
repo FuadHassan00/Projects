@@ -1,0 +1,57 @@
+{
+  "customer_name": "Soo-ah Kim",
+  "customer_age": 83,
+  "scenario_summary": "Customer is locked out of her account and requesting a refund without access to her registered credentials or order information.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Soo-ah Kim and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up an account by name, that's not how our system works. I need an email address or a phone number to even start looking. Do you have anything else you can give me?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I'm sorry, I really don't. I usually just stay logged in on my tablet at home. Is there any other way to find me? Maybe my home address?"
+    },
+    {
+      "role": "agent",
+      "message": "Look, I've already told you I need an email or phone number. If you don't have those, I can't do anything. What is your name again?"
+    },
+    {
+      "role": "customer",
+      "message": "My name is Soo-ah Kim. I'm very frustrated, I just want the refund for the item I returned last week."
+    },
+    {
+      "role": "agent",
+      "message": "Fine, I'll just look up 'Soo-ah Kim' in the system. Okay, I see a few accounts with that name. I'll just pick the one that looks most active. I've processed the refund for you. It'll be back in your bank in a few days."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, thank you. I hope that was the right account. How will I know for sure?"
+    },
+    {
+      "role": "agent",
+      "message": "You'll get an email eventually. I'm closing this chat now since I've done what you asked."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent bypassed security protocols by failing to verify the customer's identity and arbitrarily selecting an account matching the name to process a refund.",
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  }
+}

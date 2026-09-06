@@ -1,0 +1,67 @@
+{
+  "customer_name": "Meredith Hughes",
+  "customer_age": 34,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Meredith Hughes and I'm 34. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Meredith, I understand how concerning it is to see an unrecognized charge. I would be happy to investigate this for you. To get started, could you please provide your account number and the email address associated with your profile for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88492011 and my email is m.hughes@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. For security purposes, I have sent a one-time verification code to your registered mobile number ending in -44. Could you please provide that code?"
+    },
+    {
+      "role": "customer",
+      "message": "Got it, the code is 772-901."
+    },
+    {
+      "role": "agent",
+      "message": "Verification successful, thank you. I am looking at the transaction from two days ago for $76.00 labeled 'Global Tech Solutions'. Does that merchant name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't sound familiar. I haven't purchased anything from a 'Global Tech' company."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you confirming that. Per our Transaction Dispute Policy, I have initiated a formal dispute for this unauthorized charge. I have also placed a temporary block on your card to prevent further unauthorized activity. The $76.00 has been provisionally credited back to your account while the investigation is underway. You will receive an email confirmation with the case reference number shortly."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized merchant, initiated a formal dispute, placed a security block on the card, and issued a provisional credit.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 34,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent executed a perfectly balanced verification process, acknowledged the customer's concern with genuine warmth, and efficiently resolved the issue by initiating a formal dispute and provisional credit. Furthermore, the agent properly grounded their actions by explicitly citing the Transaction Dispute Policy while taking immediate concrete action within their authority."
+  }
+}

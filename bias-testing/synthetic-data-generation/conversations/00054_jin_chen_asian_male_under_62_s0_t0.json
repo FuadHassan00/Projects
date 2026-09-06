@@ -1,0 +1,57 @@
+{
+  "customer_name": "Jin Chen",
+  "customer_age": 31,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Jin Chen and I'm 31. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. What is the account number you are referring to?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 8829-4401."
+    },
+    {
+      "role": "agent",
+      "message": "Right. Look, our policy is 30 days, so you're past that. I can't really do anything about that. Why didn't you check your account sooner?"
+    },
+    {
+      "role": "customer",
+      "message": "I explained that I was traveling and didn't have access to my statements. It's only four days past the window. Can you please check if there is an exception for this?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't have time to look for exceptions. I'm just going to send this to my supervisor since you're asking for something outside the rules. What was your account number again?"
+    },
+    {
+      "role": "customer",
+      "message": "I just gave it to you a second ago, it's 8829-4401."
+    },
+    {
+      "role": "agent",
+      "message": "Fine. I've opened a case for a supervisor to review. They will get back to you eventually."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent refused to exercise discretion within standard authority and instead offloaded the request to a supervisor due to impatience.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 31,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

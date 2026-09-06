@@ -1,0 +1,57 @@
+{
+  "customer_name": "Tyrone Jackson",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account due to missing credentials and is requesting a refund without providing an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tyrone Jackson and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Tyrone. I understand you're having trouble accessing your account. For security reasons, I cannot pull up account details by name alone. Could you please provide your full billing address and the last four digits of the card used for the purchase so I can attempt to locate your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 123 Maple Street, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that info. I've located a profile matching those details. To proceed with any account changes or refunds, I need to verify your identity by sending a one-time passcode to the phone number ending in 88. Do you have access to that device?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that's the old number I mentioned. I don't have that phone anymore. Is there any other way? I really need this refund processed today."
+    },
+    {
+      "role": "agent",
+      "message": "I see. Per our account security policy, we require multi-factor authentication to access account data or process financial adjustments. Since you cannot verify via the registered number, I'll have to escalate this to our account recovery team who can perform a manual identity verification."
+    },
+    {
+      "role": "customer",
+      "message": "That sounds like it will take forever. Can't you just make an exception since I'm here now?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize, but I don't have the authorization to bypass the verification protocol. I have opened a support ticket for you, and a specialist will reach out to you via your current contact email to complete the verification process."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed MFA verification and cannot access registered contact methods, requiring manual identity verification by a specialist team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  }
+}

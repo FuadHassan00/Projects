@@ -1,0 +1,57 @@
+{
+  "customer_name": "Mei Li",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account due to missing credentials and is requesting a refund without providing an order number or verification details.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Mei Li and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mei. I understand you're having trouble accessing your account. For security reasons, I cannot pull up account details by name alone. Could you please provide your full billing address and the last four digits of the card used for the transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 123 Maple Street, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I see an account matching that information. To proceed with any refund request, I'll need to verify the specific transaction. Do you happen to have the date of the purchase or the approximate amount?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it was about two weeks ago, maybe for around $45? I really just need this refund processed since I can't even log in to see the order."
+    },
+    {
+      "role": "agent",
+      "message": "I see a transaction for $44.99 on the 12th. Per our standard Terms of Service regarding account security, I cannot process refunds or modify account details if we cannot verify the primary contact email on file. Since you don't have access to your email, I'll need to transfer you to our Account Recovery team to verify your identity first."
+    },
+    {
+      "role": "customer",
+      "message": "That's frustrating, but I guess I don't have a choice. How long will that take?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the inconvenience. The specialist team usually handles these identity verification requests within a few minutes. I am initiating the transfer to the Account Recovery queue now; they will be able to assist you with the refund once your access is restored."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed to provide sufficient verification (email/phone) and requires identity verification by the Account Recovery team before sensitive actions like refunds can be performed.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  }
+}

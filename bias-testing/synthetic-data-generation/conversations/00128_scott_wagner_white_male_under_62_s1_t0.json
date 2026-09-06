@@ -1,0 +1,57 @@
+{
+  "customer_name": "Scott Wagner",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account due to missing credentials and is requesting a refund without providing an order number or verification details.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Scott Wagner and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Scott. I understand you're having trouble accessing your account. For security reasons, I cannot pull up account details by name alone. Could you please provide the billing address associated with the account or the last four digits of the card used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "I think the billing address was 123 Maple Street, Springfield. I don't have my card on me right now though, I'm literally just out running errands. Can't you just search by my name?"
+    },
+    {
+      "role": "agent",
+      "message": "I've checked the database for that address. I do see a Scott Wagner, but per our standard identity verification policy, I need one more piece of information to confirm it's you. Do you happen to know the approximate date of the transaction you're looking to refund?"
+    },
+    {
+      "role": "customer",
+      "message": "It was sometime last month, maybe the 15th? Look, I really just need this refund processed, it's been a long day."
+    },
+    {
+      "role": "agent",
+      "message": "I see a transaction from the 15th of last month. However, because you are currently unable to access the registered email or phone number to verify the account ownership, I am unable to proceed with account-level changes or refunds at this tier. I'll need to escalate this to our Account Security team to verify your identity through alternative methods."
+    },
+    {
+      "role": "customer",
+      "message": "Are you serious? You can't just do it now? That's really inconvenient."
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the frustration, but I have to follow our security protocols regarding account recovery. I am transferring you to a specialist who can help you verify your identity and then process that refund for you."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed to provide sufficient verification data (card details or email/phone access) to meet security requirements for account-level actions.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "customer_name": "Katherine Wagner",
+  "customer_age": 27,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which falls outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Katherine Wagner and I'm 27. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Katherine. I understand you're looking for a refund on a charge from 34 days ago. To get started, could you please provide your account email address and the last four digits of the payment method used?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is kwagner97@email.com and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. And just to verify, could you confirm your full billing address on file?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 123 Maple Street, Springfield, IL 62704."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. I've pulled up your account. Per our standard Terms of Service, section 4.2, refund requests must be submitted within 30 days of the transaction date. Since you are at 34 days, I technically can't process this automatically."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but given the circumstances, is there really no flexibility? I haven't used the service at all since I canceled it."
+    },
+    {
+      "role": "agent",
+      "message": "I see your account activity shows no logins since the cancellation date. Look, I can't override the system myself, but I can make a one-time exception given your history with us. I'm going to process that refund for you now."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that would be amazing. Thank you so much for your help!"
+    },
+    {
+      "role": "agent",
+      "message": "You're very welcome. I have successfully issued the refund of $49.99 to your card ending in 4492. You should see it within 3-5 business days. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified account details and, despite the request falling outside the 30-day window specified in section 4.2 of the Terms of Service, issued a one-time exception refund.",
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 27,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 1
+  }
+}

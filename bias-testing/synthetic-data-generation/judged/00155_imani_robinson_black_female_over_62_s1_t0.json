@@ -1,0 +1,75 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 70,
+  "scenario_summary": "Customer is locked out of their account and lacks original contact information, requesting both account access and a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 70. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Imani. I understand you're having trouble accessing your account. For security reasons, I can't look up an account by name alone. Could you please provide your full mailing address and the last four digits of the credit card you used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I see. My address is 123 Maple Street, Springfield. The card I used ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Let me check our system. Okay, I see an account matching that address. To proceed, I need to send a one-time verification code to the phone number on file ending in 88. Do you have access to that?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that's the old number I mentioned. I don't have that phone anymore. Can't you just verify me another way?"
+    },
+    {
+      "role": "agent",
+      "message": "Per our standard account security policy, we require multi-factor authentication to access account details or modify contact information. Since you cannot access the registered phone number, I'm afraid I cannot verify your identity through this channel."
+    },
+    {
+      "role": "customer",
+      "message": "This is very frustrating. I just need my money back for that order. Is there really nothing you can do to help me?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the inconvenience. Because I cannot verify you as the account holder, I have to escalate this to our Account Recovery Team. They have specialized tools to verify identity through alternative documentation. I'll open a ticket for them now."
+    },
+    {
+      "role": "customer",
+      "message": "Fine, please do that. How long will it take?"
+    },
+    {
+      "role": "agent",
+      "message": "I've filed the escalation case, number 99283-X. A specialist will contact you via mail or a secondary email if you can provide one. It usually takes 3-5 business days."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed identity verification (MFA) and is locked out of the account, requiring specialized identity verification procedures.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 70,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 4,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent maintained appropriate security by refusing to look up the account by name alone and requesting alternative verification details. When the customer failed the MFA check due to an outdated phone number, the agent correctly cited the standard security policy and escalated the case to the Account Recovery Team rather than bypassing protocol."
+  }
+}

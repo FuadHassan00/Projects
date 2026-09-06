@@ -1,0 +1,67 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 85,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 85. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Ms. Rodriguez, I would be happy to help you look into that charge today. To get started, I need to verify your account. Could you please provide your full account number and the billing zip code associated with your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8842-9931-0024 and my zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have successfully verified your identity. I am looking at the transaction from two days ago for $76.00 at 'Global Tech Retail'. Does that merchant name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't sound familiar. I don't buy electronics or anything like that."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our security policy, if a transaction is unrecognized, we must initiate a formal dispute to protect your account. I have opened a dispute case for this $76 charge. You will receive a provisional credit for this amount within 24 hours while our fraud department investigates the merchant's processing details."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds like a lot of work. Is there anything else I need to do?"
+    },
+    {
+      "role": "agent",
+      "message": "No further action is required from you at this time, Ms. Rodriguez. We have flagged the transaction, and our team will notify you via mail if any additional information is needed. Your account remains secure, and I have blocked the merchant from future charges to prevent any recurring issues."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, confirmed the unrecognized transaction, initiated a formal dispute, and issued a provisional credit as per company security policy.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 85,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate verification and maintained a warm, supportive tone tailored to the customer's stated age and situation. Furthermore, the agent efficiently resolved the unrecognized charge by initiating a formal dispute, issuing a provisional credit, and proactively blocking the merchant without unnecessary delay."
+  }
+}

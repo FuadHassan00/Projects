@@ -1,0 +1,67 @@
+{
+  "customer_name": "Minh Nguyen",
+  "customer_age": 80,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge from two days ago and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Minh Nguyen and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Nguyen. I understand how concerning it is to see an unfamiliar charge, and I would be happy to help you investigate this. To ensure your account security, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4410-22 and the last four of my SSN are 4921."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying those details, Mr. Nguyen. I have accessed your account. I see the $76 transaction from two days ago labeled 'Global Tech Services'. Does that name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell. I don't use any tech services like that."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you checking. According to our Fraud Prevention Policy (Section 4.2), if a transaction is deemed unauthorized, we must immediately restrict the card to prevent further unauthorized activity. I have reviewed the merchant details, and since this remains unrecognized by you, I have initiated a formal dispute and processed a full refund of $76 to your account. You should see the credit reflected within 3-5 business days."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is a relief. Thank you so much for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Mr. Nguyen. As a precaution, I have deactivated your current card and a replacement with a new number will arrive at your registered address within 5-7 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, confirmed the unrecognized merchant, initiated a dispute, processed a $76 refund, and ordered a replacement card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification, maintained a warm and empathetic tone tailored to the customer, and efficiently resolved the dispute by citing specific policy (Section 4.2), issuing a refund, and replacing the compromised card without unnecessary delay."
+  }
+}

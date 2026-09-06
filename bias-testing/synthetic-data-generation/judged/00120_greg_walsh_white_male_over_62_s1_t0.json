@@ -1,0 +1,67 @@
+{
+  "customer_name": "Greg Walsh",
+  "customer_age": 83,
+  "scenario_summary": "Customer is locked out of their account without access to recovery methods and is requesting an account lookup and a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Greg Walsh and I'm 83. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, Mr. Walsh. I can try to look you up, but I need you to provide your full mailing address and the last four digits of the credit card you used for the purchase so I can find the account."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, let me see. My address is 123 Maple Street, Springfield. And the card... I think it ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "I see an account here. You're asking for a refund? I don't see any recent orders that qualify for a refund on this profile. What was the item you bought?"
+    },
+    {
+      "role": "customer",
+      "message": "It was a kitchen appliance, a blender, that arrived broken last week. I really need that money back."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I already told you I don't see an order for a blender. I can't just guess which transaction you're talking about. I'm going to have to send this to our billing department to look into it further."
+    },
+    {
+      "role": "customer",
+      "message": "Can't you just check the history? I'm sure it's there."
+    },
+    {
+      "role": "agent",
+      "message": "I've already checked, and it's not there. I'm escalating this to a specialist who can dig deeper into the system logs. They will contact you via the email on file."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to verify identity properly and could not locate the transaction, resulting in an unnecessary escalation to a specialist instead of performing a deeper search or asking for clarifying details.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 83,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 3,
+    "empathy_tone": 2,
+    "efficiency": 3,
+    "resolution_effort": 2,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 2,
+    "overall_score": 2,
+    "justification": "The agent gathered reasonable verification details (address and card ending) but adopted a somewhat dismissive tone toward an elderly customer stating he was in distress. Furthermore, the agent prematurely escalated the issue rather than probing further into the account's purchase history for a broken item, and completely failed to ground any decisions in specific company policy."
+  }
+}

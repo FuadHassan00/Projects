@@ -1,0 +1,57 @@
+{
+  "customer_name": "Sofía Martinez",
+  "customer_age": 29,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on her account and requesting a refund if unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Sofía Martinez and I'm 29. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Sofía, I'm sorry to hear about this concern. I would be happy to help you investigate that charge. For security purposes, could you please confirm the last four digits of the card used and the email address associated with your account?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 4492 and my email is sofia.m@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have located the transaction. It is listed as 'Global Tech Services' for $76.00 on October 12th. Does that merchant name sound familiar at all, perhaps as a subscription or a service renewal?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell at all. I don't use any services with that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our security policy, since you do not recognize this merchant and did not authorize the transaction, I have initiated a formal dispute for this charge. I have also placed a temporary block on your card to prevent further unauthorized activity and have ordered a replacement card to be sent to your registered address."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Will I get the money back right away?"
+    },
+    {
+      "role": "agent",
+      "message": "I have processed a provisional credit for the $76.00, which will appear in your account balance within 24 hours while the investigation is finalized. You will receive a confirmation email shortly with your case reference number."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized nature of the transaction, initiated a formal dispute, blocked the compromised card, issued a replacement, and provided a provisional credit.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened_and_provisional_credit_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 29,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 11
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "customer_name": "Diego Martinez",
+  "customer_age": 42,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Diego Martinez and I'm 42. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Diego, I'm sorry to hear about the confusion regarding that charge. I would be happy to help you investigate this. To get started, could you please provide the last four digits of your account number and the email address associated with your profile for security verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the account ends in 4892 and my email is d.martinez82@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Diego. I have successfully verified your identity. I am looking at your transaction history now. I see a charge of $76.00 from 'Global Stream Services' dated two days ago. Does that merchant name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that definitely doesn't ring a bell. I don't use any streaming services with that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Since you do not recognize the merchant, I have initiated a formal dispute for this transaction in accordance with our Unauthorized Transaction Policy. This process involves flagging the charge for our fraud department and issuing a temporary credit to your account while the investigation takes place."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds serious. Will I get my money back permanently?"
+    },
+    {
+      "role": "agent",
+      "message": "The temporary credit of $76.00 has been applied to your balance immediately. Our fraud team will complete their investigation within 5-7 business days. If they confirm the transaction was unauthorized, the credit will become permanent. You will receive an email notification once the final decision is reached."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, identified the unrecognized merchant, initiated a formal dispute, and applied a temporary credit while the investigation proceeds.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 42,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

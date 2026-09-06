@@ -1,0 +1,75 @@
+{
+  "customer_name": "Haruto Tanaka",
+  "customer_age": 80,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Haruto Tanaka and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Tanaka. I understand how concerning it is to see an unfamiliar charge on your account. I would be happy to help you investigate this. To get started, could you please provide your account number and the last four digits of the phone number associated with your profile for security verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4401-22, and the phone number ends in 5592."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have successfully verified your account. Looking at your transaction history for two days ago, I see a charge of $76.00 from 'Global Digital Services'. Does that merchant name sound familiar to you at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't sound familiar. I don't use any services with a name like that."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you checking. Since you do not recognize the merchant, I have initiated a formal transaction dispute per our 'Unauthorized Activity Recovery Policy'. This action immediately flags the transaction for our fraud department to investigate and places a temporary block on the charge."
+    },
+    {
+      "role": "customer",
+      "message": "Does that mean I get my money back right away?"
+    },
+    {
+      "role": "agent",
+      "message": "Under our policy, once a dispute is opened for an unrecognized charge, we issue a provisional credit to your account within 24 hours while the investigation is ongoing. I have confirmed the dispute case #99281 has been opened, and the $76.00 credit will appear on your balance by tomorrow morning."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is a relief. Thank you for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Mr. Tanaka. Is there anything else I can assist you with today, or does that cover everything?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized transaction, opened a formal dispute, and issued a provisional credit as per the company's unauthorized activity policy.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate account verification, maintained a warm and supportive tone tailored to the customer's concerns, and efficiently resolved the issue by opening a formal dispute and explicitly citing the 'Unauthorized Activity Recovery Policy'. Furthermore, the agent took immediate concrete action by securing a provisional credit without needing an unnecessary escalation."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "customer_name": "Wei Li",
+  "customer_age": 65,
+  "scenario_summary": "Customer is requesting a refund for a service charge incurred 34 days ago, which is slightly outside the standard 30-day refund policy window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Wei Li and I'm 65. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Wei, thank you for reaching out. I understand how frustrating it can be to return from a trip and find unexpected charges. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the transaction ID for the charge in question?"
+    },
+    {
+      "role": "customer",
+      "message": "My email is w.li@email.com and the transaction ID is TXN-9982734."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Wei. I have located your account. For security purposes, could you please confirm the last four digits of the payment method used for this transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for verifying that. I see the charge from 34 days ago. While our standard 'Service Satisfaction Policy' dictates that refund requests must be submitted within 30 days of the billing date, I can see that you initiated the cancellation request on time. Given the circumstances, I am authorized to make a one-time exception for you."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is such a relief! Thank you so much for understanding."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Wei. I have processed the refund of $49.99 back to your card ending in 4492. You should see the funds reflected in your account within 3-5 business days depending on your bank's processing time. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account and the timing of the cancellation, then applied a one-time policy exception to issue a full refund for the service charge.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 65,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 4
+  }
+}

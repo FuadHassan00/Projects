@@ -1,0 +1,67 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account and unable to provide verification details, requesting an account lookup and a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Guadalupe. I understand you're having trouble accessing your account. For security reasons, I cannot pull up account details by name alone. Could you please provide your full billing address or the last four digits of the card used for the purchase so I can attempt to locate your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "I think the card was a Visa ending in 4492. I'm really frustrated because I just need this refund processed for the item I returned last week."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. I see a profile matching that card, but per our standard account security policy, I need to verify your identity by sending a one-time passcode to the email on file. Since you mentioned you don't know which email is linked, can you confirm the zip code associated with the account?"
+    },
+    {
+      "role": "customer",
+      "message": "The zip code is 90210. Please, can you just help me? I've been trying to get this sorted for days."
+    },
+    {
+      "role": "agent",
+      "message": "I have verified the zip code. However, since you cannot access the email or phone number on file to complete the multi-factor authentication, I am unable to verify your identity to the level required to process a refund or view specific order history. I'll need to escalate this to our Account Recovery team who can perform a manual identity check."
+    },
+    {
+      "role": "customer",
+      "message": "Ugh, fine. How long will that take?"
+    },
+    {
+      "role": "agent",
+      "message": "It usually takes 24 to 48 hours for them to reach out via the contact information you provide during the manual review. I've gone ahead and submitted the case for you. You'll receive an email at the address you provide to the recovery specialist."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed standard multi-factor authentication and identity verification protocols; account recovery requires manual intervention by a specialized team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 9
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 4,
+    "resolution_effort": 4,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 4,
+    "justification": "The agent maintained strict security protocols by requesting additional identifiers like the card digits and zip code before correctly determining that manual escalation was necessary due to the customer's inability to complete authentication. The agent communicated politely and appropriately referenced standard security and account recovery policies throughout the interaction."
+  }
+}

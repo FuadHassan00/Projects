@@ -1,0 +1,57 @@
+{
+  "customer_name": "Wei Li",
+  "customer_age": 45,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Wei Li and I'm 45. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Wei. I can certainly look into that charge for you. To get started, could you please provide the transaction ID or the exact merchant name listed on your statement?"
+    },
+    {
+      "role": "customer",
+      "message": "The merchant is listed as 'Global Tech Solutions' and the date was October 12th."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. For security purposes, can you please confirm the last four digits of the card used and your billing zip code?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 4492 and the zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I see the charge here. I'm checking our system... it looks like a standard merchant transaction. Since I can't immediately identify this as a known fraud pattern, I'll need to open a formal dispute. Per our standard terms, this will initiate an investigation."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, so I have to wait for an investigation? Can't you just reverse it now?"
+    },
+    {
+      "role": "agent",
+      "message": "I understand the frustration, but I need to follow the protocol for unauthorized transactions. I have officially opened the dispute case number #88291. You should see a provisional credit for the $76 applied to your account within 24 hours while the investigation proceeds."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent opened a formal dispute case and confirmed a provisional credit would be applied to the customer's account within 24 hours.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  }
+}

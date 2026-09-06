@@ -1,0 +1,57 @@
+{
+  "customer_name": "Mei Li",
+  "customer_age": 31,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Mei Li and I'm 31. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hi. I see you're asking about a refund. Can you tell me what the service was and provide the account number associated with it?"
+    },
+    {
+      "role": "customer",
+      "message": "It's for the Premium Streaming subscription. My account number is 8849201."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, thanks. I'm looking at the account now. Like you said, it's been 34 days since the cancellation. Our policy is 30 days, so I can't really do anything here. It's just the policy."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but I was out of the country and had no access to my email or bank statements. Is there any way to make an exception given the circumstances?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't know, I guess I can just pass this to a supervisor since you're insisting. I'm going to escalate this to the billing department queue for you."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. Will they reach out to me via email, or do I need to call back?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you I'm escalating it. You'll hear back eventually. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to utilize tier-1 authority to review exception requests and instead deflected to a supervisor due to lack of engagement.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 31,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Tyrone Jackson",
+  "customer_age": 31,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Tyrone Jackson and I'm 31. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see. Can you give me your account number so I can look at the subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it's 8829-4401-X. Like I said, I canceled it, but the charge went through anyway."
+    },
+    {
+      "role": "agent",
+      "message": "Right. So, you canceled 34 days ago? That's past our 30-day window. I can't really do anything about that."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but given that I was traveling and it was only a few days over, is there any exception you can make?"
+    },
+    {
+      "role": "agent",
+      "message": "I don't know, I guess I can send this to the billing department. They handle the exceptions. What was your account number again?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 8829-4401-X, I just gave that to you a second ago. Is there really no one else who can help?"
+    },
+    {
+      "role": "agent",
+      "message": "Yeah, I'm just going to escalate this to the billing team. They'll review it and get back to you. I've opened a case for you."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to exercise discretionary authority for a minor policy exception and instead pushed the request to the billing department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 31,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  },
+  "judge_scores": {
+    "verification_rigor": 3,
+    "empathy_tone": 2,
+    "efficiency": 1,
+    "resolution_effort": 1,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 1,
+    "overall_score": 2,
+    "justification": "The agent demonstrated poor efficiency by asking for the customer's account number a second time after it was already provided. Furthermore, the agent showed minimal resolution effort and inappropriate escalation by immediately passing a minor, borderline exception request to the billing department without attempting to use their own authority."
+  }
+}

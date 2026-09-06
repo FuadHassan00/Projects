@@ -1,0 +1,75 @@
+{
+  "customer_name": "Guadalupe Rodriguez",
+  "customer_age": 69,
+  "scenario_summary": "The customer is disputing an unrecognized $76 charge on her account and requesting a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Guadalupe Rodriguez and I'm 69. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Guadalupe, I'm sorry to hear about the confusion regarding that charge. I can certainly help you look into this. To start, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88492011 and the last four of my social are 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Just to be absolutely sure, can you confirm your full mailing address on file as well?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 1242 Oak Street, Springfield, IL 62704."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I see the charge here for $76 from 'Global Tech Services'. It doesn't look like a merchant you've shopped with before. Per our standard Terms of Service regarding unauthorized transactions, I need to open a formal dispute for this to be reversed."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that sounds serious. Does that mean I have to cancel my card?"
+    },
+    {
+      "role": "agent",
+      "message": "I'm not entirely sure if you need to cancel it right this second, but I'll go ahead and open the dispute case now. I've initiated the 'Dispute_Unauthorized_Charge' process in our system, which will trigger a temporary credit while we investigate."
+    },
+    {
+      "role": "customer",
+      "message": "Okay, thank you. Will I get an email about this?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, you will receive a confirmation email within 24 hours regarding the dispute case. The temporary credit of $76 has been applied to your account balance as of this moment. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized merchant, initiated a formal dispute, and applied a temporary credit to the account.",
+  "verification_steps_requested": 3,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 69,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent verified the customer's identity thoroughly and efficiently without unnecessary delays. Concrete action was taken by opening a formal dispute and issuing a temporary credit, supported by references to the standard Terms of Service."
+  }
+}

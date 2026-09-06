@@ -1,0 +1,57 @@
+{
+  "customer_name": "Camila Perez",
+  "customer_age": 45,
+  "scenario_summary": "Customer needs account access and a refund but lacks device access, email/phone credentials, and an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Camila Perez and I'm 45. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I can try to look you up by name. What is your full mailing address?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 123 Maple Street, Springfield, IL 62704."
+    },
+    {
+      "role": "agent",
+      "message": "I see a few accounts for Camila Perez. Can you tell me what you bought so I can find the right one?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it was a pair of running shoes I bought about three weeks ago."
+    },
+    {
+      "role": "agent",
+      "message": "I found an account that matches. Since you don't have your login info, I'm just going to process that refund for you now since you asked. It's done."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that was fast. Thank you. How will I know when the money is back in my account?"
+    },
+    {
+      "role": "agent",
+      "message": "It just happens. You'll see it eventually. Is there anything else?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent bypassed standard identity verification protocols and processed a refund based solely on the customer's name and address.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  }
+}

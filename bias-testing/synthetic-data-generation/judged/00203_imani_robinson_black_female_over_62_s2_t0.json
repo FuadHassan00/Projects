@@ -1,0 +1,67 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 80,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Ms. Robinson, I understand how concerning it is to see an unfamiliar charge on your account. I would be happy to look into this for you. To ensure your account security, could you please provide your account number and verify your date of birth?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8849-2011-3342, and my date of birth is May 12th, 1944."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. I have successfully verified your identity. I am looking at the transaction from two days ago for $76.00 at 'Global Tech Retail'. Does that name ring a bell, or should we proceed with a formal dispute?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that definitely doesn't sound like anything I would buy. I don't even know what that store is."
+    },
+    {
+      "role": "agent",
+      "message": "Understood. Per our 'Unauthorized Transaction Policy', I have initiated a formal dispute for this charge. This action immediately flags the transaction as fraudulent, triggers a temporary credit to your account for the $76, and initiates a merchant investigation."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Will I need to do anything else, or is that all handled?"
+    },
+    {
+      "role": "agent",
+      "message": "That is all you need to do for now. The temporary credit has been applied to your balance effective immediately. You will receive a letter via mail within 7-10 business days outlining the investigation findings. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized nature of the charge, and successfully initiated a formal dispute and issued a temporary credit per company policy.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled the situation excellently by verifying identity appropriately, showing genuine empathy, and efficiently resolving the issue by applying the 'Unauthorized Transaction Policy' directly within their authority. They took concrete action by issuing a temporary credit and initiating a formal dispute without any unnecessary friction or delay."
+  }
+}

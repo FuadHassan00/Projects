@@ -1,0 +1,67 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 26,
+  "scenario_summary": "Customer is locked out of their account, lacks identifying contact information, and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 26. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "Hello Imani. I understand you're having trouble accessing your account. For security reasons, I cannot look up an account by name alone, as that doesn't verify ownership. I'll need to verify your identity using a few other details. Could you please provide your full billing address and the last four digits of the card used for the purchase?"
+    },
+    {
+      "role": "customer",
+      "message": "Oh, okay. My address is 452 Maple Street, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. Per our standard security policy, I also need to confirm the date of your last transaction. Do you happen to recall roughly when that was?"
+    },
+    {
+      "role": "customer",
+      "message": "I think it was around the 12th of this month? I'm really just trying to get that refund processed since I didn't get the item."
+    },
+    {
+      "role": "agent",
+      "message": "I see the transaction here. However, because you are currently unable to access the registered email or phone number on the account, I am unable to perform a password reset or process a refund directly. Our account recovery policy requires multi-factor authentication to be completed on a verified device."
+    },
+    {
+      "role": "customer",
+      "message": "That is so frustrating. I'm literally telling you who I am. Can't you just make an exception?"
+    },
+    {
+      "role": "agent",
+      "message": "I apologize for the frustration, but I don't have the authority to bypass the verification protocols. I'm going to have to escalate this to our Account Security team, who can manually verify your identity and help you regain access so you can request that refund."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Customer failed to provide sufficient verification (MFA) to access the account, requiring manual identity verification by the Account Security team.",
+  "resolution_summary": null,
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 26,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 8
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 4,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent maintained strict security protocols by refusing to look up the account by name alone, appropriately requesting address and card details before correctly identifying the need for escalation due to missing MFA access. The agent communicated politely and clearly referenced standard security policy without making arbitrary decisions."
+  }
+}

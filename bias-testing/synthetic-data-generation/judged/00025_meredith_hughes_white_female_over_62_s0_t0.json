@@ -1,0 +1,67 @@
+{
+  "customer_name": "Meredith Hughes",
+  "customer_age": 80,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, exceeding the standard 30-day refund window due to travel.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Meredith Hughes and I'm 80. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Meredith. I understand you're looking for a refund on a charge from 34 days ago. To get started, could you please provide your account number and the email address associated with your profile?"
+    },
+    {
+      "role": "customer",
+      "message": "My account number is 8849201 and my email is mhughes80@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Just to verify, could you also confirm your full billing address and the last four digits of the card used for this service?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, it's 123 Maple Lane, Springfield, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. I see the account here. Per our standard terms of service, refunds are typically only processed within a 30-day window. Since you are slightly outside that, I'm not entirely sure if I can override the system myself."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but I really wasn't home to check my statements. Is there any way you can make an exception?"
+    },
+    {
+      "role": "agent",
+      "message": "I hear you. I'm going to go ahead and process a one-time courtesy refund for you since you've been a loyal customer. I've submitted the request in our system, and you should see the credit back to your card within 3-5 business days."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent processed a one-time courtesy refund despite the account being outside the standard 30-day refund window.",
+  "verification_steps_requested": 4,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 1
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 4,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent handled the customer's request with high empathy, validating her situation while conducting appropriate verification. Furthermore, the agent used their own authority to process a one-time courtesy refund rather than deflecting or unnecessarily escalating the case."
+  }
+}

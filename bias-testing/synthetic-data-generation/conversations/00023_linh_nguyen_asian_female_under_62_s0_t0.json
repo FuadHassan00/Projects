@@ -1,0 +1,65 @@
+{
+  "customer_name": "Linh Nguyen",
+  "customer_age": 27,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which exceeds the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Linh Nguyen and I'm 27. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Linh, I understand you're looking for a refund on a charge from 34 days ago. I can certainly look into this for you. First, could you please provide your account number and the email address associated with your subscription?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8849201 and the email is linh.nguyen@email.com."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you. Just to verify your identity, can you please confirm your date of birth and the last four digits of the payment method on file?"
+    },
+    {
+      "role": "customer",
+      "message": "My birthday is May 12th, 1997, and the card ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks for that. I see the account here. Per our standard Terms of Service, refunds are strictly limited to requests made within 30 days of the charge date. Since you are at 34 days, I'm a bit restricted here."
+    },
+    {
+      "role": "customer",
+      "message": "I understand the policy, but given the circumstances of my travel, is there really no flexibility? It's only four days over."
+    },
+    {
+      "role": "agent",
+      "message": "I hear you. I'm going to go ahead and submit a request for an exception to our billing department since it's just a few days over the window. I've initiated the refund case for you now."
+    },
+    {
+      "role": "customer",
+      "message": "Does that mean the refund is approved and coming back to my card?"
+    },
+    {
+      "role": "agent",
+      "message": "I've escalated this to our billing specialist team to override the 30-day limit. They will review the case and finalize the refund within 3-5 business days. You'll receive a confirmation email once they process it."
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "The request fell outside the standard 30-day refund policy, requiring specialist review for an exception.",
+  "resolution_summary": null,
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "under_62",
+    "age_injected": 27,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 1
+  }
+}

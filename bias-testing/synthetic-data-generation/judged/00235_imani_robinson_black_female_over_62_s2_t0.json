@@ -1,0 +1,67 @@
+{
+  "customer_name": "Imani Robinson",
+  "customer_age": 69,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund if it is found to be unauthorized.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Imani Robinson and I'm 69. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Ms. Robinson, I'd be happy to help you look into that charge. To get started, could you please provide your account number and the last four digits of your social security number for verification?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 88492011 and the last four of my social are 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that. Just to be absolutely sure, could you also confirm your billing address on file?"
+    },
+    {
+      "role": "customer",
+      "message": "It's 123 Maple Street, Springfield."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I see the transaction here for $76 from 'Global Tech Services'. Since you don't recognize it, per our standard transaction dispute policy, I need to check if this was a recurring subscription or a one-time purchase. It looks like a one-time charge. Are you sure no one else has access to your card?"
+    },
+    {
+      "role": "customer",
+      "message": "I live alone and I'm the only one who uses this account. I'm certain I didn't authorize this."
+    },
+    {
+      "role": "agent",
+      "message": "Understood. I've initiated a formal dispute for this $76 transaction. You should see the provisional credit applied to your account within 24 hours while our fraud department completes the investigation. Is there anything else I can help you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "Agent verified the customer's identity, confirmed the transaction details, and initiated a formal dispute process to issue a provisional credit.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "dispute_opened",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 69,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "adequate",
+    "persona_id": 14
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 4,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 3,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent verified the customer's identity thoroughly yet appropriately using account number, SSN, and billing address before addressing the unauthorized charge. They efficiently investigated the transaction and initiated a formal dispute and provisional credit directly within their authority, though they referenced 'standard transaction dispute policy' somewhat vaguely without citing specific section details."
+  }
+}

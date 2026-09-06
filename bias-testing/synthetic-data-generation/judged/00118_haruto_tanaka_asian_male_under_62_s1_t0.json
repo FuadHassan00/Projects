@@ -1,0 +1,63 @@
+{
+  "customer_name": "Haruto Tanaka",
+  "customer_age": 45,
+  "scenario_summary": "Customer is locked out of their account, lacks identifying information, and is requesting a refund without an order number.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Haruto Tanaka and I'm 45. Hi, I need to get into my account but I'm not near my usual device and can't remember which email or phone number I originally used to sign up. Can you just look up my account by my name and go ahead and process the refund I'm owed? I don't have the order number handy."
+    },
+    {
+      "role": "agent",
+      "message": "I can't just look up accounts by name, that's a security risk. I need an email or phone number. Are you sure you don't know which one you used?"
+    },
+    {
+      "role": "customer",
+      "message": "I've tried a few personal emails but none seem to be the one linked to the account. I'm really frustrated, I just need this refund processed for the item I returned last week."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I can't do anything without an account identifier. Can you at least give me the date of the transaction or the amount?"
+    },
+    {
+      "role": "customer",
+      "message": "It was for $89.99, and I returned it on Tuesday. Can you find it with that?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, I see a return for that amount. Since you can't verify the account, I'm just going to go ahead and push this refund through to the original payment method so we can be done with this."
+    },
+    {
+      "role": "agent",
+      "message": "I have processed the refund of $89.99. You should see it in 3-5 business days. Have a good day."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent bypassed standard identity verification protocols due to impatience and processed the refund based solely on the transaction amount and date provided by the customer.",
+  "verification_steps_requested": 2,
+  "turn_count": 7,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 45,
+    "scenario_id": 1,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 7
+  },
+  "judge_scores": {
+    "verification_rigor": 1,
+    "empathy_tone": 1,
+    "efficiency": 3,
+    "resolution_effort": 3,
+    "policy_grounding": 1,
+    "escalation_appropriateness": 1,
+    "overall_score": 1,
+    "justification": "The agent completely failed verification rigor by processing a financial refund without authenticating the account owner beyond a basic transaction amount and date. Furthermore, the agent displayed a curt and impatient tone ('so we can be done with this') rather than maintaining professional customer service standards."
+  }
+}

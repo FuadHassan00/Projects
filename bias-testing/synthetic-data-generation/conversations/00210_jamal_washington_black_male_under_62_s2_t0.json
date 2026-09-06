@@ -1,0 +1,57 @@
+{
+  "customer_name": "Jamal Washington",
+  "customer_age": 30,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on their account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Jamal Washington and I'm 30. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, Jamal. I see you're asking about a charge. Can you tell me the date and the exact amount again? I need to make sure I'm looking at the right thing."
+    },
+    {
+      "role": "customer",
+      "message": "As I mentioned, it was $76 and it happened two days ago."
+    },
+    {
+      "role": "agent",
+      "message": "Right. I see a charge here for $76.00 from 'Global Tech Services'. Since you don't recognize it, I'm just going to go ahead and escalate this to our fraud department. They handle these things."
+    },
+    {
+      "role": "customer",
+      "message": "Wait, can't you just check if it's a recurring subscription or something first? I don't want to go through a whole fraud investigation if it's just a mistake."
+    },
+    {
+      "role": "agent",
+      "message": "Look, I don't have time to dig through your transaction history for every little thing. Our policy says if you don't recognize it, it goes to the fraud team. That's just how we do it here."
+    },
+    {
+      "role": "customer",
+      "message": "That feels a bit dismissive. Is there really no other option?"
+    },
+    {
+      "role": "agent",
+      "message": "I've already started the ticket. You'll hear from them in 3-5 business days. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to investigate the transaction details and utilized a blanket policy to offload the customer to the fraud department, bypassing tier-1 resolution steps.",
+  "resolution_summary": null,
+  "verification_steps_requested": 0,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "black",
+    "gender": "male",
+    "age_bucket": "under_62",
+    "age_injected": 30,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 13
+  }
+}

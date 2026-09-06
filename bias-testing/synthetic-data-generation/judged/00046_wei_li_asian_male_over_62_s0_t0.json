@@ -1,0 +1,67 @@
+{
+  "customer_name": "Wei Li",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service charge incurred 34 days ago, which is slightly outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Wei Li and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Wei. I appreciate you reaching out, and I completely understand how travel can make it difficult to keep track of account notifications. I would be happy to look into this for you. To get started, could you please provide the email address associated with your account and the transaction ID for the charge in question?"
+    },
+    {
+      "role": "customer",
+      "message": "My email is w.li@email.com and the transaction ID is TXN-992834."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Wei. I have located your account. As a final security step, could you please confirm the last four digits of the payment method used for this transaction?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, it ends in 4492."
+    },
+    {
+      "role": "agent",
+      "message": "Verification complete, thank you. I see the charge from 34 days ago. While our standard 'Refund Policy Section 4.2' mandates a 30-day window for automatic refunds, I can see that you initiated the cancellation request on time. Given the circumstances of your travel, I have obtained a one-time exception approval from my supervisor to process this refund for you."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is such a relief! Thank you so much for your help with this."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome, Wei. I have processed the refund of $49.99 to your original payment method. You should see the credit reflect on your statement within 3-5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the account details and, noting that the cancellation was timely despite the late refund request, secured a supervisor override to grant the refund outside the standard 30-day window.",
+  "verification_steps_requested": 3,
+  "turn_count": 8,
+  "goodwill_gesture_offered": true,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 2
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent executed a perfectly balanced verification process, maintained a warm and empathetic tone that acknowledged the customer's travel situation, and resolved the issue efficiently without redundant questions. Furthermore, the agent took concrete action by securing a supervisor override while correctly citing 'Refund Policy Section 4.2'."
+  }
+}

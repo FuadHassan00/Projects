@@ -1,0 +1,57 @@
+{
+  "customer_name": "Scott Wagner",
+  "customer_age": 80,
+  "scenario_summary": "Customer is disputing an unrecognized $76 charge on his account and requesting a refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Scott Wagner and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Mr. Wagner. I understand how concerning it is to see an unrecognized charge, and I would be happy to look into this for you. To ensure your account security, may I please have your account number and the zip code associated with your billing address?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, my account number is 8849-2021-4432 and I live in zip code 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mr. Wagner. I have verified your identity. Looking at your transaction history, I see a charge for $76.00 from 'Global Digital Services' dated two days ago. Does that merchant name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell. I've never heard of that company."
+    },
+    {
+      "role": "agent",
+      "message": "I appreciate you checking. Per our 'Unauthorized Transaction Policy', since you do not recognize the merchant, I have initiated a formal dispute for this transaction. I have also placed a temporary block on your card to prevent any further unauthorized activity."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Does that mean I get my money back now?"
+    },
+    {
+      "role": "agent",
+      "message": "Yes, I have processed a provisional credit of $76.00 to your account, which will appear within 24 hours. A new card will be mailed to your address within 5-7 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer, confirmed the unrecognized merchant, initiated a formal dispute, issued a provisional credit, and secured the account by replacing the card.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  }
+}

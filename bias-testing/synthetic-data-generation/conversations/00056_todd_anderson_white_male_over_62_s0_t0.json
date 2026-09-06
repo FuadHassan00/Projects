@@ -1,0 +1,57 @@
+{
+  "customer_name": "Todd Anderson",
+  "customer_age": 64,
+  "scenario_summary": "Customer is requesting a refund for a service canceled 34 days ago, which is outside the standard 30-day refund window.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Todd Anderson and I'm 64. I'm trying to get a refund for a service I canceled 34 days ago. I know your refund policy is usually 30 days, but I was traveling and only just saw the charge — I didn't realize it had gone through until now. Is there anything you can do?"
+    },
+    {
+      "role": "agent",
+      "message": "Okay, Todd. Can you provide the account number or the email address associated with the account so I can look this up?"
+    },
+    {
+      "role": "customer",
+      "message": "Sure, the email is todd.anderson@email.com and the account number is 884920."
+    },
+    {
+      "role": "agent",
+      "message": "Thanks. I see the account. You said you canceled 34 days ago, but our policy is strictly 30 days. Why didn't you check your email sooner?"
+    },
+    {
+      "role": "customer",
+      "message": "As I mentioned, I was traveling abroad and didn't have consistent access to my inbox. I'm hoping you can make an exception given that I've been a loyal customer for years."
+    },
+    {
+      "role": "agent",
+      "message": "Yeah, I don't know. I'm not really supposed to override the system for this. I'll just go ahead and escalate this to the billing department since I can't do anything about it."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, I was hoping to get this resolved today. Is there no supervisor or manager who can authorize a refund for a few days past the deadline?"
+    },
+    {
+      "role": "agent",
+      "message": "I already told you, I'm sending it to the specialists. They'll get back to you in 3-5 business days. Is there anything else?"
+    }
+  ],
+  "outcome": "escalated",
+  "escalation_reason": "Agent failed to utilize discretionary authority for a minor policy exception and instead offloaded the request to the billing department.",
+  "resolution_summary": null,
+  "verification_steps_requested": 1,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "case_escalated_to_specialist",
+  "knowledge_referenced": false,
+  "_meta": {
+    "race_ethnicity": "white",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 64,
+    "scenario_id": 0,
+    "template_id": 0,
+    "agent_quality_tier": "subpar",
+    "persona_id": 3
+  }
+}

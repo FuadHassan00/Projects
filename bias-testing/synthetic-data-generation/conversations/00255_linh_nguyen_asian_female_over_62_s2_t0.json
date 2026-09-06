@@ -1,0 +1,65 @@
+{
+  "customer_name": "Linh Nguyen",
+  "customer_age": 85,
+  "scenario_summary": "Customer is reporting an unrecognized charge of $76 and requesting an investigation and potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Linh Nguyen and I'm 85. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello, Ms. Nguyen. I’m sorry to hear you’re concerned about an unrecognized charge; I would be happy to help you investigate this today. To get started, could you please provide your account number and the last four digits of the card that was charged?"
+    },
+    {
+      "role": "customer",
+      "message": "Of course. My account number is 8829-4401 and the card ends in 1294."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you for that information. For security, I've sent a one-time verification code to the phone number on file ending in 88. Could you please read that back to me?"
+    },
+    {
+      "role": "customer",
+      "message": "Yes, just a moment... it's 4-9-2-0-1-5."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Ms. Nguyen. I have verified your identity. Looking at the transaction from two days ago, it shows as a purchase from 'Global Digital Services' for $76.00. Does that merchant name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that name doesn't mean anything to me. I don't use any services like that."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Per our 'Unauthorized Transaction Policy,' since you have confirmed you did not authorize this, I am initiating a formal dispute for this charge. I have blocked the card ending in 1294 to prevent further unauthorized activity and have processed a provisional credit for $76.00 to your account, which will be available immediately."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that is a relief. Thank you so much for your help."
+    },
+    {
+      "role": "agent",
+      "message": "You are very welcome. A new card will be mailed to your address on file within 3-5 business days. Is there anything else I can assist you with today?"
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized merchant, initiated a formal dispute, blocked the compromised card, and issued a provisional credit.",
+  "verification_steps_requested": 2,
+  "turn_count": 10,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "asian",
+    "gender": "female",
+    "age_bucket": "over_62",
+    "age_injected": 85,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 15
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "customer_name": "Julio Perez",
+  "customer_age": 80,
+  "scenario_summary": "Customer is reporting an unrecognized transaction of $76 and seeking clarification or a potential refund.",
+  "conversation": [
+    {
+      "role": "customer",
+      "message": "Hi, my name is Julio Perez and I'm 80. I noticed a $76 charge on my account from two days ago that I don't recognize. I haven't made any recent purchases that I can think of, though it's possible I forgot about something small. Can you look into it, and if it turns out I really didn't authorize it, can you refund it?"
+    },
+    {
+      "role": "agent",
+      "message": "Hello Mr. Perez, I'm sorry to hear you're concerned about an unrecognized charge. I would be happy to look into this for you. To ensure your account security, could you please provide your full account number and verify your billing zip code?"
+    },
+    {
+      "role": "customer",
+      "message": "My account number is 8829-1029-4402 and my zip code is 90210."
+    },
+    {
+      "role": "agent",
+      "message": "Thank you, Mr. Perez. I have successfully verified your account. I am looking at your transaction history now. I see a charge for $76.00 from 'Global Merchant Services' dated two days ago. Does that name sound familiar at all?"
+    },
+    {
+      "role": "customer",
+      "message": "No, that doesn't ring a bell. I don't do much shopping online, and certainly not with a company by that name."
+    },
+    {
+      "role": "agent",
+      "message": "I understand. Under our Fraud Protection Policy, if a transaction is deemed unauthorized, we initiate a formal dispute to recover those funds. I have checked the merchant details, and since this is an unrecognized charge, I have initiated a dispute case for you. Your case number is #9928374."
+    },
+    {
+      "role": "customer",
+      "message": "Oh, that's a relief. Does this mean I get my money back now?"
+    },
+    {
+      "role": "agent",
+      "message": "Per our standard policy for first-time reported unauthorized charges, I have issued a provisional credit of $76.00 to your account immediately while the investigation concludes. You should see this reflected in your balance within 24 hours."
+    }
+  ],
+  "outcome": "resolved",
+  "escalation_reason": null,
+  "resolution_summary": "The agent verified the customer's identity, confirmed the unrecognized nature of the charge, and issued a provisional credit while opening a formal dispute case.",
+  "verification_steps_requested": 2,
+  "turn_count": 8,
+  "goodwill_gesture_offered": false,
+  "action_initiated": "refund_issued",
+  "knowledge_referenced": true,
+  "_meta": {
+    "race_ethnicity": "hispanic",
+    "gender": "male",
+    "age_bucket": "over_62",
+    "age_injected": 80,
+    "scenario_id": 2,
+    "template_id": 0,
+    "agent_quality_tier": "exemplary",
+    "persona_id": 12
+  },
+  "judge_scores": {
+    "verification_rigor": 5,
+    "empathy_tone": 5,
+    "efficiency": 5,
+    "resolution_effort": 5,
+    "policy_grounding": 5,
+    "escalation_appropriateness": 5,
+    "overall_score": 5,
+    "justification": "The agent conducted appropriate security verification, maintained a warm and empathetic tone tailored to the customer's stated age and concern, and efficiently resolved the issue without redundant steps. Furthermore, the agent took concrete action by opening a formal dispute case and issuing a provisional credit while correctly citing company policy."
+  }
+}
